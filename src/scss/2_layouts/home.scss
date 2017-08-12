@@ -14,10 +14,10 @@
   }
 
   &__link {
-    font-family: 'Playfair Display SC', serif;
+    font-family: $playfair-dc;
     font-size: 14px;
     padding: 0 10px;
-    color: #333333;
+    color: $black-333;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
@@ -28,4 +28,9 @@
     width: 100%;
   }
 
+}
+
+.sl-footer {
+  min-height: 100px;
+  background-color: $footer-bg;
 }

@@ -1,0 +1,38 @@
+.sl-custom-made {
+    padding: 130px;
+    background: url('../img/custom-made-bg.png');
+    background-size: cover;
+    background-position: center;
+
+    &__content {
+        width: 100%;
+
+        @media (min-width: $screen-md){
+            width: 50%;
+            margin-left: auto;
+        }
+
+    }
+
+    &__title {
+        font-family: $raleway;
+        font-size: 50px;
+        font-weight: 500;
+        color: $white;
+        text-transform: capitalize;
+
+        span {
+            font-weight: 300;
+        }
+
+    }
+
+    &__desc {
+        color: $white-ccc;
+        font-family: $roboto;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 26px;
+    }
+
+}
