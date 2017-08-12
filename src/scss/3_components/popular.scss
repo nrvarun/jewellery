@@ -1,0 +1,24 @@
+.sl-popular {
+    padding: 50px;
+    background-color: #fdfdfd;
+    text-align: center;
+    margin: 0 auto;
+
+    &__title {
+        font-family: $playfair-dc;
+        font-size: 28px;
+        font-weight: 400;
+        color: $blue-f5d;
+    }
+
+    &__brands-list {
+        list-style-type: none;
+    }
+
+    &__brand {
+        padding: 20px 0;
+        display: inline-block;
+        width: 20%;
+    }
+
+}
