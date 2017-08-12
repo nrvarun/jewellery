@@ -1,0 +1,45 @@
+.sl-intro-banner {
+    padding: 0px;
+    display: flex;
+
+    &__jewel {
+        display: inline-block;
+        img {
+            height: 100%;
+        }
+    }
+
+    &__content {
+        padding: 100px;
+        width: 100%;
+        display: inline-block;
+
+        @media (min-width: $screen-md){
+            width: 60%;
+        }
+
+    }
+
+    &__title {
+        font-family: $playfair-dc;
+        font-size: 50px;
+        line-height: 45px;
+        font-weight: 500;
+        color: $blue-f5d;
+        text-transform: uppercase;
+
+        span {
+            font-size: 30px;
+            font-weight: 300;
+        }
+
+    }
+
+    &__desc {
+        color: $blue-f5d;
+        font-family: $roboto;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 26px;
+    }
+}
