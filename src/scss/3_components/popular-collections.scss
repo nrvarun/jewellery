@@ -1,0 +1,107 @@
+.sl-collections {
+    padding: 50px;
+    background-color: #fdfdfd;
+    text-align: center;
+    margin: 0 auto;
+
+    &__title {
+        font-family: $playfair-dc;
+        font-size: 28px;
+        font-weight: 400;
+        margin-bottom: 40px;
+        color: $blue-f5d;
+    }
+
+    &__slide {
+        display: flex;
+        flex-direction: column;
+        padding: 60px;
+        background-color: #ffffff;
+        
+        &__content {
+           display: flex;
+           flex-direction: column;
+           justify-content: center;
+           align-items: center;
+        }
+
+        &__img-content {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        &__img {
+            width: 300px;
+            height: 100%;
+        }
+
+        &__heading {
+            font-family: $raleway;
+            font-size: 50px;
+            font-weight: 500;
+            text-transform: capitalize;
+            margin: 0;
+            color: $blue-f5d;
+        }
+
+        &__sub-heading {
+            font-family: $raleway;
+            font-size: 12px;
+            text-transform: uppercase;
+            margin: 0;
+            font-weight: 300;
+            color: $golden-f89;
+        }
+
+    }
+
+    &__slider {
+        padding: 30px;
+        // width: 100%;
+        margin: 0 auto;
+    }
+
+    &__categories {
+        list-style-type: none;
+        display: flex;
+        justify-content: center;
+        li {
+            width: 20%;
+            margin-left: 20px;
+        }
+    }
+
+    &__category {
+        width: 100%;
+        padding: 20px;
+        background-color: #f2f2f2;
+
+        &__heading {
+            font-family: $playfair-dc;
+            font-size: 26px;
+            line-height: 8px;
+            margin: 10px 0 0;
+            color: $blue-f5d;
+        }
+
+        &__img {
+            height: 120px;
+            width: 90px;
+            max-width: 100%;
+            margin-right: 10px;
+        }
+
+        &__sub-heading {
+            font-family: $roboto;
+            font-size: 14px;
+            color: $golden-f89;
+            margin-bottom: 10px;
+        }
+
+    }
+
+    li a {
+        text-decoration: none;
+    }
+
+}
