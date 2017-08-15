@@ -1,6 +1,6 @@
 'use strict';
 
-// let $ = require('jQuery');
+let $ = require('jQuery');
 
 $(document).ready(function () {
   $('.sl-collections__slider').slick({

@@ -1,6 +1,14 @@
 .sl-header {
   border-bottom: 1px solid #ececec;
 }
+nav {
+  position: relative;
+}
+.sl-menu-button {
+  position: absolute;
+  right: 40px;
+  top: 35px;
+}
 .sl-nav {
   margin: 0 auto;
   display: flex;

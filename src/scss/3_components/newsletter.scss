@@ -1,0 +1,58 @@
+.sl-newsletter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: $footer-bg;
+    padding: 50px 100px;
+
+    &__heading {
+        font-family: $playfair-dc;
+        font-size: 30px;
+        line-height: 40px;
+        font-weight: 500;
+        color: $blue-f5d;
+        margin: 0;
+        text-transform: uppercase;
+    }
+
+    &__sub-heading{
+        font-family: $roboto;
+        font-size: 14px;
+        line-height: 30px;
+        font-weight: 300;
+        color: #000000;
+        margin: 0 0 10px 0;
+    }
+
+    &__input {
+        font-family: $roboto;
+        font-size: 12px;
+        font-weight: 300;
+        color: $blue-f5d;
+        padding: 15px;
+        width: 400px;
+        outline: 0;
+        border: 1px solid #e7e6e6;
+        &::-webkit-input-placeholder {
+            opacity: 0.8;
+        } 
+    }
+
+    &__submit-btn {
+        position: relative;
+        padding: 15px;
+        border: 0;
+        outline: 0;
+        color: #b1844d;
+        cursor: pointer;
+        background-color: #b1844d;
+        &::after {
+            position: absolute;
+            content: url('./img/submit-btn-bg.png');
+            left: 0;
+            right: 0;
+        }
+    }
+
+}

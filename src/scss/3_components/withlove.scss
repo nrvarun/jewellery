@@ -1,0 +1,70 @@
+.sl-withlove {
+    padding: 60px 150px;
+    display: flex;
+    justify-content: center;
+
+    &__img-container {
+        height: 100vh;
+        img {
+            max-height: 90vh;
+        }
+    }
+
+    &__card {
+        padding: 45px;
+        margin-left: 30px;
+        max-width: 80%;
+        border: 1px solid #ececec;
+        background-color: #ececec;
+
+        &--grey {
+            background-color: #f7f6f6;
+        }
+        
+        &--blue {
+            margin-top: 20px;
+            padding: 25px;
+            background-color: $blue-f5d;
+            padding-bottom: 35px;
+
+            &__title {
+                font-family: $raleway;
+                color: #ffffff;
+                font-size: 20px;
+                font-weight: 300;
+                margin-top: 0;
+                margin-bottom: 25px;
+                span {
+                    text-transform: capitalize;
+                    font-size: 35px;
+                }
+            }
+        }
+
+        &__title {
+            font-family: $raleway;
+            font-weight: 300;
+            color: #333333;
+            font-size: 45px;
+            line-height: 55px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        &__desc {
+            font-family: $roboto;
+            font-weight: 300;
+            color: #999999;
+            font-size: 12px;
+            line-height: 22px;
+            text-align: justify;
+        }
+
+        .button.button--white {
+            position: relative;
+            left: 10px;
+        }
+
+    }
+
+}

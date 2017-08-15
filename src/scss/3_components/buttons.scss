@@ -1,0 +1,30 @@
+.button {
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 20px 30px;
+    border: 1px solid #ececec;
+    color: #999;
+    font-family: $playfair-dc;
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 50%;
+    cursor: pointer;
+    background-color: transparent;
+    
+    &--gold {
+        color: #b1844d;
+        border: 1px solid #b1844d;
+    }
+
+    &--white {
+        font-size: 14px;
+        padding: 10px 15px;
+        color: #ffffff;
+        border: 1px solid #ffffff;
+    }
+
+    &--blue {
+
+    }
+
+}
