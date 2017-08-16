@@ -6,32 +6,67 @@
         display: inline-block;
         img {
             height: 100%;
+            position: absolute;
+            top: 0;
+            right: 0;
         }
     }
 
-    &__content {
-        padding: 100px;
-        width: 100%;
-        display: inline-block;
+    &__slider {
 
+    }
+    
+    &__slide {
+        background: url('./img/banner.png') no-repeat;
+        background-position: center right;
+        background-size: 0 0;
+    }
+
+    &__content {
+        padding: 50px 40px;
+        width: 100%;
+
+        @media (min-width: 550px){
+            width: 80%;
+            padding: 60px;
+        }
         @media (min-width: $screen-md){
-            width: 60%;
+            width: 70%;
+            padding: 60px;
+        }
+
+        @media (min-width: $screen-lg){
+            width: 65%;
+            padding: 100px;
         }
 
     }
 
     &__title {
         font-family: $playfair-dc;
-        font-size: 50px;
-        line-height: 45px;
+        font-size: 30px;
+        // line-height: 30px;
         font-weight: 500;
         color: $blue-f5d;
         text-transform: uppercase;
+        margin: 10px 0 0 0;
 
         span {
-            font-size: 30px;
+            font-size: 18px;
             font-weight: 300;
         }
+        
+        @media screen and (min-width: $screen-md) {
+            font-size: 50px;
+            line-height: 45px;
+
+            span {
+                font-size: 30px;
+                font-weight: 300;
+            }
+
+        }
+
 
     }
 

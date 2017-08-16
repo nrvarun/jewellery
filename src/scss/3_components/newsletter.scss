@@ -4,7 +4,12 @@
     justify-content: center;
     flex-direction: column;
     background-color: $footer-bg;
-    padding: 50px 100px;
+    padding: 25px 50px;
+
+    @media screen and (min-width: $screen-md) {
+        padding: 50px 100px;
+    }
+
 
     &__heading {
         font-family: $playfair-dc;
@@ -31,12 +36,17 @@
         font-weight: 300;
         color: $blue-f5d;
         padding: 15px;
-        width: 400px;
+        width: 200px;
         outline: 0;
         border: 1px solid #e7e6e6;
         &::-webkit-input-placeholder {
             opacity: 0.8;
         } 
+
+        @media screen and (min-width: $screen-md) {
+            width: 400px;
+        }
+
     }
 
     &__submit-btn {

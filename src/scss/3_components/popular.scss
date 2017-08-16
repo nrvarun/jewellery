@@ -1,8 +1,12 @@
 .sl-popular {
-    padding: 50px;
+    padding: 30px;
     background-color: #fdfdfd;
     text-align: center;
     margin: 0 auto;
+
+    @media screen and (min-width: $screen-md) {
+        padding: 50px;
+    }
 
     &__title {
         font-family: $playfair-dc;
@@ -17,8 +21,14 @@
 
     &__brand {
         padding: 20px 0;
-        display: inline-block;
-        width: 20%;
+        display: block;
+        width: 80%;
+
+        @media screen and (min-width: $screen-md) {
+            display: inline-block;
+            width: 20%;
+        }
+
     }
 
 }

@@ -65,9 +65,21 @@
         list-style-type: none;
         display: flex;
         justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        padding-left: 0;
         li {
-            width: 20%;
-            margin-left: 20px;
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        @media screen and (min-width: $screen-md){
+            justify-content: center;
+            flex-direction: row;
+            li {
+                width: 20%;
+                margin-left: 20px;
+            }            
         }
     }
 

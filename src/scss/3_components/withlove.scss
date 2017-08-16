@@ -1,21 +1,48 @@
 .sl-withlove {
-    padding: 60px 150px;
+    padding: 30px 20px;
     display: flex;
     justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    @media screen and (min-width: $screen-md) {
+        flex-direction: row;
+        align-items: initial;
+        padding: 60px 150px;
+    }
+
+    &__banner-content {
+        width: 100%;
+        @media screen and (min-width:$screen-sm) {
+            width: 70%;
+        }
+    }
 
     &__img-container {
-        height: 100vh;
+        height: 400px;
+        margin-bottom: 30px;
         img {
-            max-height: 90vh;
+            max-height: 100%;
+        }
+
+        @media screen and (min-width: $screen-md) {
+            height: 100vh;
+            img {
+                max-height: 90vh;
+            }
         }
     }
 
     &__card {
-        padding: 45px;
-        margin-left: 30px;
-        max-width: 80%;
+        padding: 15px;
         border: 1px solid #ececec;
         background-color: #ececec;
+
+        @media screen and (min-width: $screen-md) {
+            padding: 45px;
+            max-width: 80%;
+            margin-left: 30px;
+        }
 
         &--grey {
             background-color: #f7f6f6;
@@ -30,14 +57,23 @@
             &__title {
                 font-family: $raleway;
                 color: #ffffff;
-                font-size: 20px;
                 font-weight: 300;
                 margin-top: 0;
                 margin-bottom: 25px;
+                font-size: 20px;
                 span {
                     text-transform: capitalize;
-                    font-size: 35px;
+                    font-size: 15px;
                 }
+
+                @media screen and (min-width: $screen-md){
+                    font-size: 20px;
+                    span {
+                        text-transform: capitalize;
+                        font-size: 35px;
+                    }
+                }
+
             }
         }
 
@@ -45,10 +81,14 @@
             font-family: $raleway;
             font-weight: 300;
             color: #333333;
-            font-size: 45px;
-            line-height: 55px;
+            font-size: 30px;
+            line-height: 40px;
             margin-top: 0;
             margin-bottom: 20px;
+            @media screen and (min-width: $screen-md){
+                font-size: 45px;
+                line-height: 55px;
+            }
         }
 
         &__desc {
