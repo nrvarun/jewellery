@@ -17,9 +17,9 @@
     }
     
     &__slide {
-        background: url('./img/banner.png') no-repeat;
+        background: url('./img/banner-img.jpg') no-repeat;
         background-position: center right;
-        background-size: 0 0;
+        background-size: cover;
     }
 
     &__content {
@@ -49,7 +49,7 @@
         font-weight: 500;
         color: $blue-f5d;
         text-transform: uppercase;
-        margin: 10px 0 0 0;
+        margin: 10px 0 20px 0;
 
         span {
             font-size: 18px;

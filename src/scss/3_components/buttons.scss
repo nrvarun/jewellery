@@ -1,5 +1,5 @@
-.button {
-    text-decoration: none;
+.link {
+    text-decoration: none !important;
     text-transform: uppercase;
     border: 1px solid #ececec;
     color: #999;
@@ -8,8 +8,8 @@
     font-size: 14px;
     font-weight: 400;
     opacity: 50%;
-    cursor: pointer;
     background-color: transparent;
+    cursor: pointer;
     
     @media screen and (min-width: $screen-md) {
         padding: 20px 30px;
@@ -17,19 +17,20 @@
     }
 
     &--gold {
-        color: #b1844d;
-        border: 1px solid #b1844d;
+        &,
+        &hover,
+        &:focus,
+        &:active {
+            color: #b1844d !important;
+            border: 1px solid #b1844d;
+        }
     }
 
     &--white {
         font-size: 14px;
         padding: 10px 15px;
-        color: #ffffff;
+        color: #ffffff !important;
         border: 1px solid #ffffff;
-    }
-
-    &--blue {
-
     }
 
 }
