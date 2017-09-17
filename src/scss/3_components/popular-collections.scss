@@ -12,55 +12,6 @@
         color: $blue-f5d;
     }
 
-    &__slide {
-        display: flex;
-        flex-direction: column;
-        padding: 60px;
-        background-color: #ffffff;
-        
-        &__content {
-           display: flex;
-           flex-direction: column;
-           justify-content: center;
-           align-items: center;
-        }
-
-        &__img-content {
-            display: inline-block;
-            margin-top: 20px;
-        }
-
-        &__img {
-            width: 300px;
-            height: 100%;
-        }
-
-        &__heading {
-            font-family: $raleway;
-            font-size: 50px;
-            font-weight: 500;
-            text-transform: capitalize;
-            margin: 0;
-            color: $blue-f5d;
-        }
-
-        &__sub-heading {
-            font-family: $raleway;
-            font-size: 12px;
-            text-transform: uppercase;
-            margin: 0;
-            font-weight: 300;
-            color: $golden-f89;
-        }
-
-    }
-
-    &__slider {
-        padding: 30px;
-        // width: 100%;
-        margin: 0 auto;
-    }
-
     &__categories {
         list-style-type: none;
         display: flex;
@@ -121,8 +72,37 @@
     &__slide {
         height: 300px;
         margin: 30px;
-        background: url('./img/collection-slider.jpg') no-repeat;
-        background-size: cover;
-        background-position: center;
+        position: relative;
+    }
+
+    &__img {
+        margin: 0 auto;
+        width: auto;
+    }
+
+    &__data {
+        position: absolute;
+        top: 30px;
+        left: 60px;
+    }
+
+    &__data-desc { 
+        font-family: $raleway;
+        font-size: 12px;
+        text-transform: uppercase;
+        margin: 0;
+        font-weight: 300;
+        text-align: left;
+        color: $golden-f89;
+    }
+
+    &__data-title { 
+        font-family: $raleway;
+        font-size: 25px;
+        text-transform: uppercase;
+        text-align: left;
+        margin: 0;
+        font-weight: 600;
+        color: $blue-f5d;
     }
 }

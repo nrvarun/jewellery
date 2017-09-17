@@ -3,7 +3,7 @@
     background-color: #fdfdfd;
     
     @media (min-width: $screen-md) {
-        padding: 60px 0px 120px 0;
+        padding: 60px 0px 150px 0;
     }
 
     &__card {
@@ -40,6 +40,7 @@
         &--1 {
             .sl-whats-new__card__img {
                 top: -40px;
+                left: 50px;
             }
             .sl-whats-new__card__data {
                 position: absolute;
@@ -73,7 +74,7 @@
             .sl-whats-new__card__img {
                 top: -11px;
                 right: -15px;
-                height: 500px;
+                height: 450px;
             }
             .sl-whats-new__card__data {
                 position: absolute;
