@@ -81,6 +81,10 @@ module.exports = {
              to: './img'
            }
     ]),
+    new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
+    }),
     new HtmlWebpackPlugin({
       template: './src/index.pug',
       filename: 'index.html',

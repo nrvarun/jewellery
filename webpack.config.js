@@ -12,17 +12,17 @@ module.exports = {
     filename: './js/bundle.js',
     path: path.resolve(__dirname, './')
   },
-  eslint: {
-    configFile: './.eslintrc'
-  },
+  // eslint: {
+  //   configFile: './.eslintrc'
+  // },
   module: {
-    preLoaders: [
-      {
-        test: /\.js$/,
-        loader: 'eslint-loader',
-        exclude: /node_modules/
-      }
-    ],
+    // preLoaders: [
+    //   {
+    //     test: /\.js$/,
+    //     loader: 'eslint-loader',
+    //     exclude: /node_modules/
+    //   }
+    // ],
     loaders: [
       {
         test: /\.pug$/,
@@ -80,6 +80,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.pug',
       filename: 'index.html'
+    }),
+    new webpack.ProvidePlugin({
+        $: 'jquery',
+        jQuery: 'jquery'
     })
   ]
 };

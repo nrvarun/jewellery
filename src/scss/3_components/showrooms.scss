@@ -37,7 +37,12 @@
     }
 
     &__card {
-        height: 500px;
+        height: 300px;
+
+        @media (min-width: $screen-sm) {
+            height: 500px;
+        }
+
         position: relative;
 
         display: flex;

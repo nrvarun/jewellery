@@ -1,19 +1,34 @@
 nav 
-    ul.sl-nav
-        li
-            a.sl-nav__link(href="javascript:void(0);")
-                | home
-        li
-            a.sl-nav__link(href="javascript:void(0);")
-                | about us
-        li
-            a.sl-nav__link(href="javascript:void(0);")
-                img.sl-nav__logo(src="./img/logo.png" alt="shilpe lifestyle logo")
-        li
-            a.sl-nav__link(href="javascript:void(0);")
-                | gallery
-        li
-            a.sl-nav__link(href="javascript:void(0);")
-                | contact us
-    a(href="javascript:void(0);")
-        img.sl-menu-button(src="./img/menu-button.svg" alt="=")
+    .container
+        .row
+            .col-sm-12
+                ul.sl-nav-main
+                    li.sl-logo-container
+                        a.sl-nav__link(href="javascript:void(0);")
+                            img.sl-nav__logo(src="./img/logo.png" alt="shilpe lifestyle logo")
+                    
+                    input.sl-nav-main__search(type="text")
+        .row
+            .col-sm-12
+                ul.sl-nav
+                    li
+                        a.sl-nav__link(href="javascript:void(0);")
+                            | new arrivals
+                    li
+                        a.sl-nav__link(href="javascript:void(0);")
+                            | jewellary
+                    li
+                        a.sl-nav__link(href="javascript:void(0);")
+                            | bridals
+                    li
+                        a.sl-nav__link(href="javascript:void(0);")
+                            | collections
+                    li
+                        a.sl-nav__link(href="javascript:void(0);")
+                            | showrooms
+                    li
+                        a.sl-nav__link(href="javascript:void(0);")
+                            | contact us
+                    li
+                        a(href="javascript:void(0);")
+                            img.sl-nav__menu-button(src="./img/menu-button.svg" alt="=")

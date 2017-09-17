@@ -1,13 +1,20 @@
 'use strict';
 
-let $ = require('jQuery');
+let $ = require('jquery');
 
 $(document).ready(function () {
-  $('.sl-collections__slider').slick({
+  $('.sl-intro-banner__slider').slick({
       dots: true,
+      arrows: true,
       infinite: true,
       speed: 600,
-      slidesToShow: 1,
-      centerMode: true
+      slidesToShow: 1
+    });
+  $('.collection-slider').slick({
+      dots: true,
+      arrows: true,
+      infinite: true,
+      speed: 600,
+      slidesToShow: 1
     });
 });

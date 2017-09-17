@@ -5,4 +5,5 @@ require('../index.pug');
 
 require('../scss/main.scss');
 
+require('./slick.min.js');
 require('./slick-carousel.js');

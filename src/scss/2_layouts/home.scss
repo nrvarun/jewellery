@@ -4,11 +4,11 @@
 nav {
   position: relative;
 }
-.sl-menu-button {
-  position: absolute;
-  right: 40px;
-  top: 35px;
-}
+// .sl-menu-button {
+//   position: absolute;
+//   right: 40px;
+//   top: 35px;
+// }
 .sl-nav {
   margin: 0 auto;
   display: flex;
@@ -24,16 +24,51 @@ nav {
   &__link {
     font-family: $playfair-dc;
     font-size: 14px;
-    padding: 0 10px;
-    color: $black-333;
+    padding: 0 20px;
+    color: $blue-f5d;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
+
+    &:hover,
+    &:focus,
+    &:active {
+      color: $golden-803;
+      text-decoration: none;
+    }
+
+  }
+
+  &__menu-button {
+    height: 12px;
+    padding-left: 20px; 
   }
 
   &__logo {
     height: 50px;
     width: 100%;
+  }
+
+}
+
+.sl-nav-main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  list-style-type: none;
+  padding-top: 20px;
+
+  &__search {
+    position: absolute;
+    right: 175px;
+    outline: 0;
+    padding: 5px 10px;
+    border-radius: 14px;
+    box-shadow: none;
+    border: 1px solid #edf0f4;
+    background-image: url('../img/search-icon.png');
+    background-repeat: no-repeat;
+    background-position: right 10px top 5px;
   }
 
 }
