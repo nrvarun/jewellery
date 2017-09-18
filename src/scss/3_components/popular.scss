@@ -17,6 +17,16 @@
 
     &__brands-list {
         list-style-type: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        li {
+            flex: 1 1 50%;
+            @media (min-width: $screen-md) {
+                flex: 1 1 25%;
+            }
+        }
     }
 
     &__brand {

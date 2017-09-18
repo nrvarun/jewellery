@@ -1,5 +1,14 @@
 .sl-featured {
-    padding: 100px;
+    padding: 30px;
+    @media (min-width: $screen-sm) {
+        padding: 50px;
+    }
+    @media (min-width: $screen-md) {
+        padding: 100px;
+    }
+    @media (min-width: $screen-lg) {
+        padding: 100px;
+    }
     background-color: #011931;
 
     &__slider {
@@ -24,7 +33,10 @@
     &__slide {
         display: flex !important;
         justify-content: center;
-        padding: 0 60px;
+        padding: 0 20px;
+        @media (min-width: $screen-md) {
+            padding: 0 60px;
+        }
     }
 
     &__data {
@@ -39,10 +51,24 @@
     }
 
     &__logo {
-        height: 85px;
-        width: 200px;
+        height: 40px;
+        width: 100px;
+        @media (min-width: $screen-md) {
+            height: 85px;
+            width: 200px;
+        }
         margin-bottom: 20px;
     }
+
+    
+    &__img {
+        height: 200px;
+        @media (min-width: $screen-sm) {
+            height: 280px;
+        }
+        margin-bottom: 30px;
+    }
+
 
     &__desc {
         width: 80%;
@@ -52,10 +78,6 @@
         color: $white;
         opacity: 0.3;
         text-align: justify;
-    }
-
-    &__img {
-
     }
 
     &__title {

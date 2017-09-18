@@ -70,14 +70,20 @@
 
 .collection-slider {
     &__slide {
-        height: 300px;
-        margin: 30px;
+        @media (min-width: $screen-md) {
+            margin: 30px;
+            // height: 300px;
+        }
+        margin: 10px;
         position: relative;
     }
 
     &__img {
         margin: 0 auto;
-        width: auto;
+        width: 500px;
+        @media (min-width: $screen-md) {
+            width: 100%;
+        }
     }
 
     &__data {
@@ -98,7 +104,10 @@
 
     &__data-title { 
         font-family: $raleway;
-        font-size: 25px;
+        font-size: 20px;
+        @media (min-width: $screen-md) {
+            font-size: 25px;
+        }
         text-transform: uppercase;
         text-align: left;
         margin: 0;

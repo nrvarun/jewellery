@@ -10,7 +10,10 @@
         background-color: $white;
         padding: 20px;
         position: relative;
-        height: 300px;
+        height: 200px;
+        @media (min-width: $screen-md) {
+            height: 300px;
+        }
         width: 100%;
         margin-bottom: 30px;
         box-shadow: 1px 1px 5px 3px #ececec;
@@ -27,6 +30,10 @@
 
         &__img {
             position: absolute;
+            height: 200px;
+            @media (min-width: $screen-md) {
+                
+            }
         }
 
         &__link {
@@ -50,8 +57,12 @@
         }
         &--2 {
             .sl-whats-new__card__img {
-                top: -40px;
+                top: -20px;
                 left: 100px;
+                @media (min-width: $screen-md) {
+                    top: -40px;
+                    left: 100px;
+                }
             }
             .sl-whats-new__card__data {
                 position: absolute;
@@ -61,8 +72,12 @@
         }
         &--3 {
             .sl-whats-new__card__img {
-                top: -5px;
-                right: -20px;
+                top: -2px;
+                right: -14px;
+                @media (min-width: $screen-md) {
+                    top: -5px;
+                    right: -20px;                
+                }
             }
             .sl-whats-new__card__data {
                 position: absolute;
@@ -72,9 +87,14 @@
         }
         &--4 {
             .sl-whats-new__card__img {
+                top: -6px;
+                right: -10px;
+                height: 280px;
+               @media (min-width: $screen-md) {
                 top: -11px;
                 right: -15px;
                 height: 450px;
+               }
             }
             .sl-whats-new__card__data {
                 position: absolute;
