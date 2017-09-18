@@ -3,12 +3,9 @@
     @media (min-width: $screen-sm) {
         padding: 50px;
     }
-    @media (min-width: $screen-md) {
-        padding: 100px;
-    }
-    @media (min-width: $screen-lg) {
-        padding: 100px;
-    }
+    // @media (min-width: $screen-lg) {
+    //     padding: 100px;
+    // }
     background-color: #011931;
 
     &__slider {
@@ -34,7 +31,7 @@
         display: flex !important;
         justify-content: center;
         padding: 0 20px;
-        @media (min-width: $screen-md) {
+        @media (min-width: $screen-lg) {
             padding: 0 60px;
         }
     }

@@ -12,6 +12,20 @@
         color: $blue-f5d;
     }
 
+    &__cat-container {
+        
+        @media (max-width: 599px) {
+            width: 100%;
+            margin-bottom: 30px;
+        }
+
+        @media (min-width: 600px) and (max-width: 767px) {
+            width: 50%;
+            margin-bottom: 30px;
+        }
+
+    }
+
     &__categories {
         list-style-type: none;
         display: flex;

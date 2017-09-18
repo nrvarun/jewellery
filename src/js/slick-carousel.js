@@ -17,7 +17,8 @@ $(document).ready(function () {
     arrows: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 1
+    slidesToShow: 1,
+    adaptiveHeight: true
   });
 
   // Featured Collections slider
