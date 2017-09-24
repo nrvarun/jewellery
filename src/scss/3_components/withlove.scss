@@ -15,46 +15,99 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        .row {
-            @media (min-width: $screen-md) {
-                width: 80%;
+        flex-direction: column;
+
+        @media (min-width: $screen-md) {
+            flex-direction: row;
+        }
+
+    }
+
+    &__card {
+        min-width: 100px;
+        margin-bottom: 30px;
+
+        @media (min-width: $screen-md) {
+            flex: 1 1 50%;
+            margin-right: 30px;
+        }
+        @media (min-width: $screen-lg) {
+            align-self: flex-start;
+            
+            &--1 {
+                align-self: stretch;
+            }
+
+            &--2 {
+                width: 400px;
+                margin: 0 auto;
             }
         }
+
     }
 
     &__banner-content {
         
     }
 
-    &__img-container {
-        height: 400px;
+    &__img {
+        height: 300px;
         @media (min-width: $screen-md) {
-            height: 570px;
+            margin-left: auto;
+            display: block;
+            height: 400px;
         }
-        margin-bottom: 30px;
-        img {
-            max-height: 100%;
+        @media (min-width: $screen-lg) {
+            height: 470px;
+        }
+        
+        @media (min-width: $screen-lg) {
+            height: 470px;
+        }
+        
+        @media (min-width: $screen-xlg) {
+            height: 515px;
         }
     }
 
-    &__card {
-        padding: 15px;
-        border: 1px solid #ececec;
-        background-color: #ececec;
+    &__details-card {
+        padding: 30px 40px;
+        background-color: #f7f6f6;
+        width: 70%;
+        margin: 0 auto;
 
-        @media screen and (min-width: $screen-md) {
-            padding: 45px;
-            margin-left: 0px;
-        }
-
-        &--grey {
-            background-color: #f7f6f6;
+        @media (min-width: $screen-md) {
+            width: auto;
+            padding: 15px 20px;
         }
         
-        &--blue {
-            margin-top: 20px;
-            padding: 36px;
-            background-color: $blue-f5d;
+        @media (min-width: $screen-lg) {
+            width: 400px;
+            margin: 0 auto 0 0;
+            padding: 20px 30px;
+        }
+
+        @media (min-width: $screen-xlg) {
+            width: 430px;
+            padding: 25px 40px;
+        }
+
+        &--1 {
+            padding: 20px 30px;
+        }
+
+        &--2 {
+            margin-top: 30px;
+            background-color: #002f5d;
+
+            @media (min-width: $screen-md) {
+                margin-top: 20px;
+            }
+ 
+            @media (min-width: $screen-lg) {
+                margin-top: 20px;
+                padding: 20px;
+            }
 
             &__title {
                 font-family: $raleway;
@@ -66,17 +119,18 @@
                 span {
                     text-transform: capitalize;
                     font-size: 15px;
+                    font-weight: 700;
                 }
 
                 @media screen and (min-width: $screen-md){
-                    font-size: 20px;
+                    font-size: 18px;
                     span {
                         text-transform: capitalize;
-                        font-size: 35px;
+                        font-size: 30px;
                     }
                 }
-
             }
+
         }
 
         &__title {
@@ -87,7 +141,12 @@
             line-height: 40px;
             margin-top: 0;
             margin-bottom: 20px;
-            @media screen and (min-width: $screen-md){
+            @media (min-width: $screen-md){
+                font-size: 30px;
+                line-height: 55px;
+                margin-bottom: 0px;
+            }
+            @media (min-width: $screen-lg){
                 font-size: 45px;
                 line-height: 55px;
             }
@@ -102,11 +161,59 @@
             text-align: justify;
         }
 
-        .button.button--white {
-            position: relative;
-            left: 10px;
-        }
-
     }
+
+    // &__card {
+    //     padding: 15px;
+    //     border: 1px solid #ececec;
+    //     background-color: #ececec;
+
+    //     margin: 0 auto;
+    //     width: 300px;
+        
+    //     @media (min-width: $screen-lg) {
+    //         padding: 45px;
+    //         margin-left: 0px;
+    //         width: auto;
+    //     }
+
+    //     &--grey {
+    //         background-color: #f7f6f6;
+    //     }
+        
+    //     &--blue {
+    //         margin-top: 20px;
+    //         padding: 36px;
+    //         background-color: $blue-f5d;
+
+            // &__title {
+            //     font-family: $raleway;
+            //     color: #ffffff;
+            //     font-weight: 300;
+            //     margin-top: 0;
+            //     margin-bottom: 25px;
+            //     font-size: 20px;
+            //     span {
+            //         text-transform: capitalize;
+            //         font-size: 15px;
+            //     }
+
+            //     @media screen and (min-width: $screen-md){
+            //         font-size: 20px;
+            //         span {
+            //             text-transform: capitalize;
+            //             font-size: 35px;
+            //         }
+            //     }
+
+    //         }
+    //     }
+
+    //     .button.button--white {
+    //         position: relative;
+    //         left: 10px;
+    //     }
+
+    // }
 
 }

@@ -24,11 +24,19 @@ nav {
   &__link {
     font-family: $playfair-dc;
     font-size: 14px;
-    padding: 0 20px;
+    padding: 0 6px;
     color: $blue-f5d;
     display: inline-block;
     text-transform: uppercase;
     text-decoration: none;
+    display: none;
+
+    @media (min-width: $screen-md) {
+      display:block;
+    }
+    @media (min-width: $screen-lg) {
+      padding: 0px 20px;
+    }
 
     &:hover,
     &:focus,
@@ -47,6 +55,7 @@ nav {
   &__logo {
     height: 50px;
     width: 100%;
+    display: block;
   }
 
 }
@@ -59,8 +68,7 @@ nav {
   padding-top: 20px;
 
   &__search {
-    position: absolute;
-    right: 175px;
+    margin-left: 20px;
     outline: 0;
     padding: 5px 10px;
     border-radius: 14px;
@@ -69,6 +77,21 @@ nav {
     background-image: url('../img/search-icon.png');
     background-repeat: no-repeat;
     background-position: right 10px top 5px;
+
+    @media (min-width: 500px) {
+      margin-left: 80px;
+    }
+
+    @media (min-width: $screen-md) {
+      position: absolute;
+      right: 70px;
+    }
+    
+    @media (min-width: $screen-xlg) {
+      position: absolute;
+      right: 170px;
+    }
+
   }
 
 }
@@ -76,4 +99,10 @@ nav {
 .sl-footer {
   min-height: 100px;
   background-color: $footer-bg;
+}
+
+.sl-logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }

@@ -30,6 +30,12 @@
     &__slide {
         display: flex !important;
         justify-content: center;
+        
+        @media (max-width: 767px) {
+            flex-direction: column-reverse;
+        }
+
+
         padding: 0 20px;
         @media (min-width: $screen-lg) {
             padding: 0 60px;
@@ -40,11 +46,17 @@
         display: block;
         width: 50%;
         float: left;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
 
     &__img-data {
         display: block;
         width: 50%;
+        @media (max-width: 767px) {
+            width: 100%;
+        }
     }
 
     &__logo {
@@ -59,8 +71,11 @@
 
     
     &__img {
-        height: 200px;
-        @media (min-width: $screen-sm) {
+        height: 150px;
+        @media (min-width: 500px) {
+            height: 200px;
+        }
+        @media (min-width: $screen-md) {
             height: 280px;
         }
         margin-bottom: 30px;
@@ -75,6 +90,11 @@
         color: $white;
         opacity: 0.3;
         text-align: justify;
+
+        @media (max-width: 767px) {
+            width: 100%;
+        }
+
     }
 
     &__title {

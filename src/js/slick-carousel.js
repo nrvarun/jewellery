@@ -8,7 +8,8 @@ $(document).ready(function () {
     arrows: true,
     infinite: true,
     speed: 600,
-    slidesToShow: 1
+    slidesToShow: 1,
+    slidesToScroll: 1
   });
 
   // Platinum Collections slider

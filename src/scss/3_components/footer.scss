@@ -6,7 +6,27 @@
 
     &-list {
         display: flex;
-        justify-content: space-around;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        flex-direction: column;
+
+        @media (min-width: $screen-sm) {
+            flex-direction: row;
+        }
+        @media (min-width: $screen-md) {
+            justify-content: baseline;
+            align-items: baseline;
+        }
+        @media (min-width: $screen-lg) {
+            justify-content: center;
+            align-items: baseline;
+        }
+        @media (min-width: $screen-xlg) {
+            justify-content: space-around;
+            align-items: baseline;
+        }
+
     }
 
     &__copyright {
@@ -22,11 +42,25 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        height: 220px;
+        height: 120px;
+        @media (min-width: $screen-md) {
+            height: 220px;
+        }
     }
 
     &__list {
         list-style-type: none;
+        margin-bottom: 20px;
+        padding: 0;
+
+        @media (min-width:$screen-sm) {
+            padding-left: 40px;
+        }
+
+        @media (min-width:$screen-md) {
+            padding-left: 30px;
+        }
+        
         
         &__heading {
             text-transform: uppercase;
