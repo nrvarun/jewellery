@@ -1,0 +1,81 @@
+.sl-intro-banner {
+    padding: 0px;
+
+    &__slide {
+
+        @media (min-width: $screen-sm) {
+            background: url('../img/banner-img.jpg') no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        @media (min-width: $screen-xlg) {
+            background-size: cover;
+        }
+
+    }
+
+    &__content {
+        padding: 50px 40px;
+
+        @media (min-width: 550px){
+            width: 80%;
+            padding: 60px;
+        }
+        @media (min-width: $screen-md){
+            width: 70%;
+            padding: 60px;
+        }
+
+        @media (min-width: $screen-lg){
+            width: 65%;
+            padding: 100px;
+        }
+
+    }
+
+    &__title {
+        font-family: $playfair-dc;
+        font-size: 30px;
+        // line-height: 30px;
+        font-weight: 500;
+        color: $blue-f5d;
+        text-transform: uppercase;
+        margin: 10px 0 20px 0;
+
+        span {
+            font-size: 18px;
+            font-weight: 300;
+        }
+        
+        @media screen and (min-width: $screen-lg) {
+            font-size: 50px;
+            line-height: 45px;
+
+            span {
+                font-size: 30px;
+                font-weight: 300;
+            }
+
+        }
+
+
+    }
+
+    &__desc {
+        color: $blue-f5d;
+        font-family: $roboto;
+        font-weight: 300;
+        font-size: 12px;
+        line-height: 26px;
+
+        @media (min-width: $screen-sm) {
+            width: 80%;
+        }
+
+        @media (min-width: $screen-md) {
+            width: 90%;
+        }
+
+    }
+}

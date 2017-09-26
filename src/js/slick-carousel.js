@@ -1,7 +1,5 @@
 'use strict';
 
-let $ = require('jquery');
-
 $(document).ready(function () {
   $('.sl-intro-banner__slider').slick({
     dots: true,
