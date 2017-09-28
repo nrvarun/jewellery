@@ -1,0 +1,4 @@
+
+// require('aos');
+
+AOS.init();

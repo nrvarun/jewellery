@@ -1,5 +1,11 @@
 .sl-collections {
-    padding: 50px;
+
+    padding: 25px;
+
+    @media (min-width: $screen-sm) {
+        padding: 50px;
+    }
+
     background-color: #fdfdfd;
     text-align: center;
     margin: 0 auto;
@@ -92,6 +98,31 @@
 }
 
 .collection-slider {
+
+    .slick-dots {
+        position: absolute;
+        bottom: -20px;
+        left: 0;
+        right: 0;
+
+        @media (min-width: $screen-sm) {
+            bottom: 50px;
+        }
+
+        & li button:before {
+            height: 15px;
+            width: 15px;
+            color: transparent;
+            border-radius: 30px;
+            border: 2px solid $golden-f89;
+        }
+        & li.slick-active button:before {
+            background-color: lighten($golden-f89, 10%);
+            border-radius: 30px;
+            border: 2px solid $golden-f89;
+        }
+    }
+
     &__slide {
         @media (min-width: $screen-md) {
             margin: 30px;
@@ -103,16 +134,20 @@
 
     &__img {
         margin: 0 auto;
-        width: 500px;
-        @media (min-width: $screen-md) {
-            width: 100%;
-        }
+        width: 100%;
+        // @media (min-width: $screen-md) {
+        //     width: 100%;
+        // }
     }
 
     &__data {
         position: absolute;
-        top: 30px;
-        left: 60px;
+        top: 20px;
+        left: 20px;
+        @media (min-width: $screen-sm) {
+            top: 30px;
+            left: 60px;
+        }
     }
 
     &__data-desc { 
@@ -127,7 +162,10 @@
 
     &__data-title { 
         font-family: $raleway;
-        font-size: 20px;
+        font-size: 16px;
+        @media (min-width: $screen-sm) {
+            font-size: 20px;
+        }
         @media (min-width: $screen-md) {
             font-size: 25px;
         }

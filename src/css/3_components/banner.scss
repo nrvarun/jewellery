@@ -1,6 +1,34 @@
 .sl-intro-banner {
     padding: 0px;
 
+    &__slider {
+        
+        .slick-dots {
+            position: absolute;
+            bottom: 0px;
+            left: 0;
+            right: 0;
+
+            @media (min-width: $screen-md) {
+                bottom: 50px;
+            }
+
+            & li button:before {
+                height: 15px;
+                width: 15px;
+                color: transparent;
+                border-radius: 30px;
+                border: 2px solid $golden-f89;
+            }
+            & li.slick-active button:before {
+                background-color: lighten($golden-f89, 10%);
+                border-radius: 30px;
+                border: 2px solid $golden-f89;
+            }
+        }
+
+    }
+
     &__slide {
 
         @media (min-width: $screen-sm) {

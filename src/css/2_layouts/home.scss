@@ -47,6 +47,11 @@ nav {
 
   }
 
+  &__ham-menu {
+    position: relative;
+    transform: rotate(180deg);
+  }
+
   &__menu-button {
     height: 12px;
     padding-left: 20px; 

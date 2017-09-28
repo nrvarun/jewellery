@@ -3,7 +3,7 @@
     background-color: #fdfdfd;
     
     @media (min-width: $screen-md) {
-        padding: 60px 0px 150px 0;
+        padding: 60px 0px 250px 0;
     }
 
     &__card {
@@ -56,6 +56,12 @@
             }
         }
         &--2 {
+            
+            @media (min-width: $screen-sm) {
+                position: relative;
+                top: 60px;
+            }
+
             .sl-whats-new__card__img {
                 top: -20px;
                 left: 100px;
@@ -68,11 +74,7 @@
                     left: 100px;
                 }
             }
-            .sl-whats-new__card__data {
-                position: absolute;
-                top: 20px;
-                right: 30px;
-            }
+            
         }
         &--3 {
             .sl-whats-new__card__img {
@@ -90,6 +92,12 @@
             }
         }
         &--4 {
+
+            @media (min-width: $screen-sm) {
+                position: relative;
+                top: 60px;
+            }
+
             .sl-whats-new__card__img {
                 top: -6px;
                 right: -10px;
