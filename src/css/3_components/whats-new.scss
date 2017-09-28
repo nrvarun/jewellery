@@ -57,21 +57,21 @@
         }
         &--2 {
             
-            @media (min-width: $screen-sm) {
+            @media (min-width: $screen-md) {
                 position: relative;
                 top: 60px;
             }
 
             .sl-whats-new__card__img {
                 top: -20px;
-                left: 100px;
+                right: 50px;
                 @media (min-width: $screen-sm) {
                     top: -20px;
                     left: 100px;
                 }
                 @media (min-width: $screen-md) {
                     top: -40px;
-                    left: 100px;
+                    left: 150px;
                 }
             }
             
@@ -93,7 +93,7 @@
         }
         &--4 {
 
-            @media (min-width: $screen-sm) {
+            @media (min-width: $screen-md) {
                 position: relative;
                 top: 60px;
             }
@@ -105,13 +105,18 @@
                @media (min-width: $screen-md) {
                 top: -11px;
                 right: -15px;
+                height: 350px;
+               }
+               @media (min-width: $screen-lg) {
+                top: -11px;
+                right: -15px;
                 height: 450px;
                }
             }
             .sl-whats-new__card__data {
                 position: absolute;
                 bottom: 20px;
-                left: 30px;
+                left: 20px;
             }
         }
 

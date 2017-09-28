@@ -74,11 +74,31 @@
             line-height: 8px;
             margin: 10px 0 0;
             color: $blue-f5d;
+
+            @media (min-width: $screen-md) {
+                font-size: 20px;
+            }
+            
+            @media (min-width: $screen-xlg) {
+                margin-top: 20px;
+                font-size: 26px;
+            }
+
         }
 
         &__img {
             height: 120px;
             margin: 0 auto;
+            display: block;
+            
+            @media (min-width: $screen-md) {
+                height: 70px;
+            }
+            
+            @media (min-width: $screen-xlg) {
+                height: 100px;
+            }
+
         }
 
         &__sub-heading {
@@ -128,6 +148,7 @@
             margin: 30px;
             // height: 300px;
         }
+
         margin: 10px;
         position: relative;
     }
@@ -135,9 +156,9 @@
     &__img {
         margin: 0 auto;
         width: 100%;
-        // @media (min-width: $screen-md) {
-        //     width: 100%;
-        // }
+        @media (min-width: $screen-lg) {
+            width: auto;
+        }
     }
 
     &__data {
