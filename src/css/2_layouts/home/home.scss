@@ -4,6 +4,12 @@
 nav {
   position: relative;
 }
+body {
+  position: relative;
+  &.menu-open {
+    overflow:hidden;
+  }
+}
 // .sl-menu-button {
 //   position: absolute;
 //   right: 40px;
@@ -68,6 +74,7 @@ nav {
     height: 50px;
     width: 100%;
     display: block;
+    margin-bottom: 20px;
   }
 
 }
@@ -78,6 +85,12 @@ nav {
   align-items: center;
   list-style-type: none;
   padding-top: 20px;
+  flex-wrap: wrap;
+  flex-direction: column;
+
+  @media (min-width: $screen-sm) {
+    flex-direction: row;
+  }
 
   &__search {
     margin-left: 20px;

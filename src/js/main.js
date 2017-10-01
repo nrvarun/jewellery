@@ -45,3 +45,37 @@ $(document).ready(function(){
 	});
 	
 });
+
+
+//Sidebar Toggle 
+
+$('.sl-nav__menu-button').on('click touchstart', function(){
+	$('body').addClass('menu-open');
+	$('.sl-overlay').addClass('active');
+	$('.sl-sidebar').addClass('show');
+});
+
+$('.sl-sidebar__close-btn').on('click', function(){
+	if($('.sl-sidebar').hasClass('show')){
+		$('body').removeClass('menu-open');
+		$('.sl-overlay').removeClass('active');
+		$('.sl-sidebar').removeClass('show');
+	}
+});
+
+$('html,body').on('click', function(e){
+
+	var target = $(e.target)[0].classList;
+
+	console.log(target.contains('sl-overlay'));
+
+	if(target.contains('sl-overlay')){
+		if($('.sl-sidebar').hasClass('show')){
+			console.log('sidebar open');
+			$('body').removeClass('menu-open');
+			$('.sl-overlay').removeClass('active');
+			$('.sl-sidebar').removeClass('show');
+		}
+	}
+
+});

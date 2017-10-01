@@ -1,0 +1,135 @@
+.sl-overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0,0,0,0.5);
+    display: none;
+
+    transition: all 2s ease;
+
+    &.active {
+        display: block;
+    }
+}
+
+.sl-sidebar {
+    position: absolute;
+    height: 100vh;
+    width: 300px;
+    right: 0;
+    top: 0;
+    transform: translateX(100%);
+    background-color: $white;
+    transition: all 0.5s ease-out;
+    
+    padding: 50px 30px;
+
+    &.show {
+        transform: translateX(0%);
+    }
+
+    &__header {
+        position: relative;
+        padding-bottom: 20px;
+        border-bottom: 1px solid lighten($golden-f89, 20%);
+    }
+
+    &__close-btn {
+       &,
+       &:active,
+       &:focus,
+       &:hover {
+        position: absolute;
+        right: 0;
+        top: 0;
+        color: $golden-f89;
+        font-family: $raleway;
+        font-weight: 400;
+        font-size: 16px;
+        text-decoration: none;
+       }
+    }
+
+    &__footer {
+        padding: 20px 0;
+        border-top: 1px solid lighten($golden-f89, 20%);
+    }
+
+    &__logo {
+        height: 40px;
+    }
+
+    &__social-logo {
+        height: 30px;
+        width: 30px;
+    }
+
+    &__actions {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-start;
+        list-style-type: none;
+        padding: 0;
+    }
+
+    &__body {
+        padding: 20px 0;
+
+        .panel-default {
+            border-color: transparent;
+            border-radius: 0px;
+            border: 0;
+            box-shadow: none;
+            margin: 0 10px;
+        }
+
+        .panel-heading {
+            a[aria-expanded=true] {
+                color: $golden-f89;
+            }
+        }
+
+        .panel-default>.panel-heading {
+            color: $blue-f5d;
+            background-color: transparent;
+            border-color: transparent;
+            text-transform: capitalize;
+            a {
+                &:hover {
+                    color: $golden-f89;
+                    text-decoration: none;
+                }
+            }
+        }
+        .panel-default>.panel-heading+.panel-collapse>.panel-body {
+            border-top-color: lighten($golden-f89, 30%);
+        }
+
+    }
+
+    &__sub-menu {
+        list-style-type: none;
+        padding: 0 0 0 10px;
+
+        a {
+            
+            &,
+            &:active,
+            &:focus {
+                font-family: $raleway;
+                font-size: 14px;
+                text-transform: capitalize;
+                color: $blue-f5d;
+            }
+
+            &:hover {
+                color: $golden-f89;
+            }
+
+        }
+
+    }
+
+}

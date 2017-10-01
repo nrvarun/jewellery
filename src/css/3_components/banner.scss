@@ -44,7 +44,12 @@
     }
 
     &__content {
-        padding: 50px 40px;
+
+        padding: 50px 15px;
+
+        @media (min-width: $screen-sm){
+            padding: 50px 40px;
+        }
 
         @media (min-width: 550px){
             width: 80%;
