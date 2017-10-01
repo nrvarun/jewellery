@@ -9,40 +9,28 @@ $(document).ready(function(){
 		triggerHook: 0.5
 	})
 	.setClassToggle('.sl-whats-new__card--1','active')
-	.addTo(controller)
-	.addIndicators({
-		name: 'card image parallax 1'
-	});
+	.addTo(controller);
 	
 	let cardParallax2 = new ScrollMagic.Scene({
 		triggerElement: '.sl-whats-new__card--2',
 		triggerHook: 0.5
 	})
 	.setClassToggle('.sl-whats-new__card--2','active')
-	.addTo(controller)
-	.addIndicators({
-		name: 'card image parallax 2'
-	});
+	.addTo(controller);
 	
 	let cardParallax3 = new ScrollMagic.Scene({
 		triggerElement: '.sl-whats-new__card--3',
 		triggerHook: 0.5
 	})
 	.setClassToggle('.sl-whats-new__card--3','active')
-	.addTo(controller)
-	.addIndicators({
-		name: 'card image parallax 3'
-	});
+	.addTo(controller);
 	
 	let cardParallax4 = new ScrollMagic.Scene({
 		triggerElement: '.sl-whats-new__card--4',
 		triggerHook: 0.5
 	})
 	.setClassToggle('.sl-whats-new__card--4','active')
-	.addTo(controller)
-	.addIndicators({
-		name: 'card image parallax 4'
-	});
+	.addTo(controller);
 	
 });
 
