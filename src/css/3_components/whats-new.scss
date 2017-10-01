@@ -100,6 +100,10 @@
                 height: 250px;
             }
 
+            @media (min-width: $screen-lg) {
+                height: 280px;
+            }
+
             &.active {
                 .sl-whats-new__card__img {
                     transform: translateY(-30%);
