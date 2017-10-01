@@ -1,46 +1,46 @@
 .sl-custom-made {
-    padding: 50px 30px 80px 30px;
-    background: url('../img/custom-made-bg.png') no-repeat;
-    background-size: cover;
-    background-position: center;
+	padding: 50px 30px 80px 30px;
+	background: url('../img/custom-made-bg.png') no-repeat;
+	background-size: cover;
+	background-position: center;
 
-    @media screen and (min-width: $screen-md){
-        padding: 130px;
-    }
+	@media screen and (min-width: $screen-md){
+		padding: 130px;
+	}
 
-    &__content {
-        width: 100%;
+	&__content {
+		width: 100%;
 
-        @media (min-width: $screen-md){
-            width: 50%;
-            margin-left: auto;
-        }
+		@media (min-width: $screen-md){
+			width: 50%;
+			margin-left: auto;
+		}
 
-    }
+	}
 
-    &__title {
-        font-family: $raleway;
-        font-size: 35px;
-        font-weight: 500;
-        color: $white;
-        text-transform: capitalize;
+	&__title {
+		font-family: $raleway;
+		font-size: 35px;
+		font-weight: 500;
+		color: $white;
+		text-transform: capitalize;
 
-        span {
-            font-weight: 300;
-        }
+		span {
+			font-weight: 300;
+		}
 
-        @media screen and (min-width: $screen-md) {
-            font-size: 50px;
-        }
+		@media screen and (min-width: $screen-md) {
+			font-size: 50px;
+		}
 
-    }
+	}
 
-    &__desc {
-        color: $white-ccc;
-        font-family: $roboto;
-        font-weight: 300;
-        font-size: 12px;
-        line-height: 26px;
-    }
+	&__desc {
+		color: $white-ccc;
+		font-family: $roboto;
+		font-weight: 300;
+		font-size: 12px;
+		line-height: 26px;
+	}
 
 }

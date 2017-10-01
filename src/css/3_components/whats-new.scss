@@ -11,12 +11,20 @@
         padding: 20px;
         position: relative;
         height: 200px;
-        @media (min-width: $screen-md) {
-            height: 300px;
-        }
+        margin: 0 auto;
         width: 100%;
         margin-bottom: 30px;
-        box-shadow: 1px 1px 5px 3px #ececec;
+        box-shadow: 4px 6px 68px 0px rgba(0,0,0,0.15);
+        
+        @media (min-width: $screen-sm) {
+            height: 220px;
+            width: 400px;
+        }
+        
+        @media (min-width: $screen-md) {
+            height: 300px;
+            width: 100%;
+        }
 
         &__title {
             margin: 0;
@@ -30,10 +38,21 @@
 
         &__img {
             position: absolute;
-            height: 200px;
-            @media (min-width: $screen-md) {
-                height: auto;
+            height: 150px;
+            transition: all 1s ease-out;
+
+            @media (min-width: $screen-sm) {
+                height: 200px;
             }
+
+            @media (min-width: $screen-md) {
+                height: 220px;
+            }
+            
+            @media (min-width: $screen-xlg) {
+                height: 250px;
+            }
+            
         }
 
         &__link {
@@ -45,9 +64,26 @@
         }
 
         &--1 {
+            
+            margin-bottom: 50px;
+
+            &.active {
+                .sl-whats-new__card__img {
+                    transform: translateY(-30%);
+                }
+            }
             .sl-whats-new__card__img {
-                top: -40px;
+                transform: translateY(-10px);
                 left: 50px;
+               
+                @media (min-width: $screen-md) {
+                    transform: translateY(5%);
+                }
+               
+                @media (min-width: $screen-lg) {
+                    transform: translateY(5%);
+                }
+
             }
             .sl-whats-new__card__data {
                 position: absolute;
@@ -55,62 +91,116 @@
                 right: 30px;
             }
         }
+
         &--2 {
             
             @media (min-width: $screen-md) {
                 position: relative;
                 top: 60px;
+                height: 250px;
+            }
+
+            &.active {
+                .sl-whats-new__card__img {
+                    transform: translateY(-30%);
+                }
             }
 
             .sl-whats-new__card__img {
-                top: -20px;
-                right: 50px;
+
+                transform: translateY(-10px);
+                left: 30px;
+
                 @media (min-width: $screen-sm) {
-                    top: -20px;
-                    left: 100px;
+                    transform: translateY(-5%);
+                    left: 50px;
                 }
                 @media (min-width: $screen-md) {
-                    top: -40px;
-                    left: 150px;
+                    transform: translateY(2%);
                 }
+                @media (min-width: $screen-lg) {
+                    transform: translateY(5%);
+                    left: 100px;
+                }
+            }
+            .sl-whats-new__card__data {
+                position: absolute;
+                top: 30px;
+                right: 40px;
             }
             
         }
+
         &--3 {
-            .sl-whats-new__card__img {
-                top: -2px;
-                right: -14px;
-                @media (min-width: $screen-md) {
-                    top: -5px;
-                    right: -20px;                
+
+            margin-top: 30px;
+
+            &.active {
+                .sl-whats-new__card__img {
+                    transform: translateY(-35%);
                 }
+            }
+
+            .sl-whats-new__card__img {
+                transform: translateY(-10px);
+                right: 14px;
+
+                @media (min-width: $screen-md) {
+                    transform: translateY(0px);
+                    right: 60px;                
+                }
+                
+                @media (min-width: $screen-lg) {
+                    transform: translateY(0px);
+                    right: 60px;                
+                }
+
             }
             .sl-whats-new__card__data {
                 position: absolute;
                 top: 20px;
                 left: 30px;
+                
+                @media (min-width: $screen-md) {
+                    transform: translateY(-20px);
+                    top: initial;
+                    bottom: 0px;
+                    right: 60px;                
+                }
+
             }
         }
+
         &--4 {
+
+            margin-top: 60px;         
 
             @media (min-width: $screen-md) {
                 position: relative;
                 top: 60px;
+                margin-top: 0px;
+            }
+
+            &.active {
+                .sl-whats-new__card__img {
+                    transform: translateY(-30%);
+                    @media (min-width: $screen-md) {
+                        transform: translateY(-30%);
+                    }
+                }
             }
 
             .sl-whats-new__card__img {
-                top: -6px;
-                right: -10px;
-                height: 280px;
-               @media (min-width: $screen-md) {
-                top: -11px;
-                right: -15px;
-                height: 350px;
+                transform: translateY(-10px);
+                right: 50px;
+               
+                @media (min-width: $screen-md) {
+                transform: translateY(-10px);                
                }
+
                @media (min-width: $screen-lg) {
-                top: -11px;
-                right: -15px;
-                height: 450px;
+                transform: translateY(5%);
+                right: 100px;
                }
             }
             .sl-whats-new__card__data {
