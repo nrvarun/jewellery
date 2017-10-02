@@ -6,9 +6,12 @@ nav {
 }
 body {
   position: relative;
+  transition: all 1s ease;
+
   &.menu-open {
     overflow:hidden;
   }
+  
 }
 // .sl-menu-button {
 //   position: absolute;
@@ -44,12 +47,12 @@ body {
       bottom: -15px;
       left: 0;
       right: 0;
-      height: 5px;
+      height: 3px;
       width: 100%;
       background-color: $golden-f89;
       transition: transform 1s ease;
       transform: scale(0,0);
-      transform-origin: left;
+      transform-origin: center;
     }
 
     @media (min-width: $screen-md) {
@@ -171,13 +174,47 @@ body {
   left: 0;
   right: 0;
   width: 100%;
-  display: block;
   transform: scaleY(0);
   transform-origin: top;
   transition: transform 1s ease-out;
   background-color: #fff;
   box-shadow: 0px 0px 1px 0px #ececec;
 
+  li {
+    display: block;
+  }
+
   padding: 20px;
 
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+  
+  @media (max-width: $screen-md - 1) {
+    display: none;
+  }
+
+  .nav-pills > li > a {
+    background-color: transparent;
+    color: $blue-f5d;
+    font-family: $playfair-dc;
+    font-size: 18px;
+    &:hover,
+    &:focus {
+      color: $golden-f89;
+    }
+  }
+
+  .nav-pills > li.active > a, 
+  .nav-pills > li.active > a:focus, 
+  .nav-pills > li.active > a:hover {
+    background-color: transparent;
+    color: $golden-f89;
+    font-family: $playfair-dc;
+    font-size: 18px;
+  }
+
+}
+.knowledge-panel {
+  margin: 0 !important;
 }

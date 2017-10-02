@@ -1,9 +1,72 @@
 .sl-mega-menu {
     padding: 20px;
 
-    &__data {
-        font-size: 16px;
-        color: $blue-f5d;
+    li {
+        display: block;
+    }
+
+    &__item {
+        display: block;
+    }
+
+    &__link {
+        &,
+        &:focus,
+        &:active {
+            font-size: 14px;
+            color: $blue-f5d;
+            font-family: $playfair-dc;
+            text-decoration: none;
+        }
+        &:hover {
+            text-decoration: inherit;
+            color: $golden-2;
+        }
+    }
+
+    &__img {
+        height: 300px;
+        max-width: 100%;
+        &.new-arrivals {
+            height: 200px;
+        }
+    }
+
+    &__tabs {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__tab {
+        display: block;
+    }
+
+    &__sub-list {
+        padding: 0;
+    }
+
+    &__item {
+        &:first-child {
+            margin-bottom: 10px;
+        }
+    }
+
+    &__heading {
+        font-family: $playfair-dc;
+        font-weight: 400;
+        font-size: 20px;
+        color: $golden-2;
+        padding-bottom: 5px;
+        margin: 0;
+    }
+
+    &__sub-heading {
+        font-family: $playfair-dc;
+        font-weight: 400;
+        font-size: 18px;
+        color: $golden-f89;
+        padding-bottom: 5px;
+        border-bottom: 1px solid lighten($golden-f89, 30%);
     }
 
 }

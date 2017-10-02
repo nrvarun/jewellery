@@ -16,63 +16,490 @@ nav.sl-navigation
                         a.sl-nav__link(href="javascript:void(0);")
                             | new arrivals
                         .sub-menu-wrapper
-                            ul.sl-mega-menu
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data new arrivals
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 1
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 2
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 3
-
+                            .row
+                                .col-sm-2
+                                    // Nav pills
+                                    ul.nav.nav-pills.sl-mega-menu__tabs
+                                        li.sl-mega-menu__tab.active
+                                            a(href='#men', data-toggle='tab') men
+                                        li.sl-mega-menu__tabs
+                                            a(href='#women', data-toggle='tab') women
+                                .col-sm-10
+                                    // Tab panes
+                                    .tab-content
+                                        #men.tab-pane.active.fade.in
+                                            ul.sl-mega-menu
+                                                li.sl-mega-menu__item
+                                                    .row
+                                                        .col-sm-6
+                                                            .row
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	gold
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	diamond
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	platinum
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                        .col-sm-6
+                                                            img.sl-mega-menu__img.new-arrivals(src="./img/bridals-menu.jpg" alt="collections menu")
+                                        #women.tab-pane.fade.in
+                                            ul.sl-mega-menu
+                                                li.sl-mega-menu__item
+                                                    .row
+                                                        .col-sm-6
+                                                            .row
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	gold
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	diamond
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	platinum
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                        .col-sm-6
+                                                            img.sl-mega-menu__img.new-arrivals(src="./img/collection-menu.jpg" alt="collections menu")
                     li.sl-nav__link-item
                         a.sl-nav__link(href="javascript:void(0);")
-                            | jewellary
+                            | jewellery
                         .sub-menu-wrapper
-                            ul.sl-mega-menu
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data jewellary
-                                 li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 1
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 2
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 3
+                            .row
+                                .col-sm-2
+                                    // Nav pills
+                                    ul.nav.nav-pills.sl-mega-menu__tabs
+                                        li.sl-mega-menu__tab.active
+                                            a(href='#jewel-men', data-toggle='tab') men
+                                        li.sl-mega-menu__tabs
+                                            a(href='#jewel-women', data-toggle='tab') women
+                                .col-sm-10
+                                    // Tab panes
+                                    .tab-content
+                                        #jewel-men.tab-pane.active.fade.in
+                                            ul.sl-mega-menu
+                                                li.sl-mega-menu__item
+                                                    .row
+                                                        .col-sm-6
+                                                            .row
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	gold
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	diamond
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	platinum
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                        .col-sm-6
+                                                            img.sl-mega-menu__img.new-arrivals(src="./img/bridals-menu.jpg" alt="collections menu")
+                                        #jewel-women.tab-pane.fade.in
+                                            ul.sl-mega-menu
+                                                li.sl-mega-menu__item
+                                                    .row
+                                                        .col-sm-6
+                                                            .row
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	gold
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	diamond
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                                .col-sm-4
+                                                                    ul.sl-mega-menu__sub-list
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__sub-heading(href="javascript:void(0);")
+                                                                                |	platinum
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bangles
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	bracelets
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	chains
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	earrings
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	necklace
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	mangalsutra
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendant earrings set
+                                                                        li.sl-mega-menu__item
+                                                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                                                |	pendants
+                                                        .col-sm-6
+                                                            img.sl-mega-menu__img.new-arrivals(src="./img/collection-menu.jpg" alt="collections menu")
+
 
                     li.sl-nav__link-item
                         a.sl-nav__link(href="javascript:void(0);")
                             | bridals
                         .sub-menu-wrapper
-                            ul.sl-mega-menu
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data bridals
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 1
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 2
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 3
+                            .row
+                                .col-sm-4
+                                    ul.sl-mega-menu
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	mang tika
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	damdi
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	nath
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	shrt set
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	long set
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	mangalsutra
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	kandoro
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	judo
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	bangles
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	kada
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	baliya
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	payal
+                                .col-sm-8
+                                    img.sl-mega-menu__img(src="./img/bridals-menu.jpg" alt="collections menu")
 
                     li.sl-nav__link-item
                         a.sl-nav__link(href="javascript:void(0);")
                             | collections
                         .sub-menu-wrapper
-                            ul.sl-mega-menu
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data collections
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 1
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 2
-                                li.sl-mega-menu__item
-                                    h1.sl-mega-menu__data 3
+                            .row
+                                .col-sm-4
+                                    ul.sl-mega-menu
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	rajputana
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	chocolate
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	pratham
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	bhupi
+                                        li.sl-mega-menu__sub-item
+                                            a.sl-mega-menu__link(href="javascript:void(0);")
+                                                |	shivam
+                                .col-sm-8
+                                    img.sl-mega-menu__img(src="./img/collection-menu.jpg" alt="collections menu")
                     li
-                        a.sl-nav__link(href="javascript:void(0);")
+                        a.sl-nav__link.js-showrooms(href="javascript:void(0);")
                             | showrooms
                     li
                         a.sl-nav__link(href="javascript:void(0);")
                             | contact us
                     li
-                        a(href="javascript:void(0);")
+                         a.sl-nav__link(href="javascript:void(0);")
                             img.sl-nav__menu-button(src="./img/menu-button.svg" alt="=")

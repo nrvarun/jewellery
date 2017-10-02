@@ -18,9 +18,9 @@
     position: absolute;
     height: 100vh;
     width: 300px;
-    right: 0;
     top: 0;
-    transform: translateX(100%);
+    left: 0;
+    transform: translateX(-100%);
     background-color: $white;
     transition: all 0.5s ease-out;
     
@@ -62,8 +62,8 @@
     }
 
     &__social-logo {
-        height: 30px;
-        width: 30px;
+        height: 20px;
+        width: 20px;
     }
 
     &__actions {
@@ -77,6 +77,10 @@
     &__body {
         padding: 20px 0;
 
+        .panel-group {
+            margin-bottom: 15px;
+        }
+
         .panel-default {
             border-color: transparent;
             border-radius: 0px;
@@ -86,6 +90,10 @@
         }
 
         .panel-heading {
+            padding-left: 0;
+            a {
+                font-family: $raleway;
+            }
             a[aria-expanded=true] {
                 color: $golden-f89;
             }
@@ -97,6 +105,7 @@
             border-color: transparent;
             text-transform: capitalize;
             a {
+                text-decoration: none;
                 &:hover {
                     color: $golden-f89;
                     text-decoration: none;
@@ -122,12 +131,41 @@
                 font-size: 14px;
                 text-transform: capitalize;
                 color: $blue-f5d;
+                text-decoration: none;
             }
 
             &:hover {
                 color: $golden-f89;
+                text-decoration: none;
             }
 
+        }
+
+    }
+
+    &__inner-list {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 10px;
+
+        &__item {
+            margin-bottom: 15px;
+        }
+
+        &__action {
+            &,
+            &:focus,
+            &:active {
+                font-family: $raleway;
+                font-size: 16px;
+                color: $blue-f5d;
+                text-transform: capitalize;
+                text-decoration: none;
+            }
+            &:hover {
+                text-decoration: inherit;
+                color: $golden-f89;
+            }
         }
 
     }

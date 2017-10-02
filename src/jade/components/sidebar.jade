@@ -12,39 +12,326 @@ aside.sl-sidebar
 							| new arrivals
 				#new-arrivals.panel-collapse.collapse
 					.panel-body
-						ul.sl-sidebar__sub-menu
-							li.sl-sidebar__action
-								a(href="javascript:void(0);")
-									|	menu 1
-							li.sl-sidebar__action
-								a(href="javascript:void(0);")
-									|	menu 2
-							li.sl-sidebar__action
-								a(href="javascript:void(0);")
-									|	menu 3
-							li.sl-sidebar__action
-								a(href="javascript:void(0);")
-									|	menu 4
+						#accordion2.panel-group
+							.panel.panel-default
+								.panel-heading
+									h4.panel-title
+										a(data-toggle='collapse', data-parent='#accordion2', href='#collapse1')
+											| men
+								#collapse1.panel-collapse.collapse
+									.panel-body
+										#accordion3.panel-group
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion3', href='#collapse3')
+															| gold
+												#collapse3.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion3', href='#collapse4')
+															| diamonds
+												#collapse4.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion3', href='#collapse5')
+															| platinum
+												#collapse5.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+
+							.panel.panel-default
+								.panel-heading
+									h4.panel-title
+										a(data-toggle='collapse', data-parent='#accordion2', href='#collapse2')
+											| women
+								#collapse2.panel-collapse.collapse
+									.panel-body
+										#accordion4.panel-group
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion4', href='#collapse6')
+															| gold
+												#collapse6.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion4', href='#collapse7')
+															| diamonds
+												#collapse7.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion4', href='#collapse8')
+															| platinum
+												#collapse8.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
 			.panel.panel-default
 				.panel-heading
 					h4.panel-title
-						a(data-toggle='collapse', data-parent='#accordion', href='#jewellary')
-							| jewellary
-				#jewellary.panel-collapse.collapse
+						a(data-toggle='collapse', data-parent='#accordion', href='#jewellery')
+							| jewellery
+				#jewellery.panel-collapse.collapse
 					.panel-body
-						ul.sl-sidebar__sub-menu
-							li.sl-sidebar__action
-								a(href="javascript:void(0);")
-									|	menu 1
-							li.sl-sidebar__action
-								a(href="javascript:void(0);")
-									|	menu 2
-							li.sl-sidebar__action
-								a(href="javascript:void(0);")
-									|	menu 3
-							li.sl-sidebar__action
-								a(href="javascript:void(0);")
-									|	menu 4
+						#accordion5.panel-group
+							.panel.panel-default
+								.panel-heading
+									h4.panel-title
+										a(data-toggle='collapse', data-parent='#accordion5', href='#jewellery-men')
+											| men
+								#jewellery-men.panel-collapse.collapse
+									.panel-body
+										#accordion6.panel-group
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion6', href='#jewellery-men-1')
+															| gold
+												#jewellery-men-1.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion6', href='#jewellery-men-2')
+															| diamonds
+												#jewellery-men-2.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion6', href='#jewellery-men-3')
+															| platinum
+												#jewellery-men-3.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+
+							.panel.panel-default
+								.panel-heading
+									h4.panel-title
+										a(data-toggle='collapse', data-parent='#accordion5', href='#jewellery-women')
+											| women
+								#jewellery-women.panel-collapse.collapse
+									.panel-body
+										#accordion7.panel-group
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion7', href='#jewellery-women-1')
+															| gold
+												#jewellery-women-1.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion7', href='#jewellery-women-2')
+															| diamonds
+												#jewellery-women-2.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+											.panel.panel-default
+												.panel-heading
+													h4.panel-title
+														a(data-toggle='collapse', data-parent='#accordion7', href='#jewellery-women-3')
+															| platinum
+												#jewellery-women-3.panel-collapse.collapse
+													.panel-body
+														ul.sl-sidebar__sub-menu
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bangles
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	set
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	bracelets
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	earrings
+															li.sl-sidebar__action
+																a(href="javascript:void(0);")
+																	|	pendant earrings set
+
 			.panel.panel-default
 				.panel-heading
 					h4.panel-title
@@ -55,16 +342,41 @@ aside.sl-sidebar
 						ul.sl-sidebar__sub-menu
 							li.sl-sidebar__action
 								a(href="javascript:void(0);")
-									|	menu 1
+									|	mang tika
 							li.sl-sidebar__action
 								a(href="javascript:void(0);")
-									|	menu 2
+									|	damdi
 							li.sl-sidebar__action
 								a(href="javascript:void(0);")
-									|	menu 3
+									|	nath
 							li.sl-sidebar__action
 								a(href="javascript:void(0);")
-									|	menu 4
+									|	shrt set
+							li.sl-sidebar__action
+								a(href="javascript:void(0);")
+									|	long set
+							li.sl-sidebar__action
+								a(href="javascript:void(0);")
+									|	mangalsutra
+							li.sl-sidebar__action
+								a(href="javascript:void(0);")
+									|	kandoro
+							li.sl-sidebar__action
+								a(href="javascript:void(0);")
+									|	judo
+							li.sl-sidebar__action
+								a(href="javascript:void(0);")
+									|	bangles
+							li.sl-sidebar__action
+								a(href="javascript:void(0);")
+									|	kada
+							li.sl-sidebar__action
+								a(href="javascript:void(0);")
+									|	baliya
+							li.sl-sidebar__action
+								a(href="javascript:void(0);")
+									|	payal
+
 			.panel.panel-default
 				.panel-heading
 					h4.panel-title
@@ -75,16 +387,51 @@ aside.sl-sidebar
 						ul.sl-sidebar__sub-menu
 							li.sl-sidebar__action
 								a(href="javascript:void(0);")
-									|	menu 1
+									|	rajputana
 							li.sl-sidebar__action
 								a(href="javascript:void(0);")
-									|	menu 2
+									|	chocolate
 							li.sl-sidebar__action
 								a(href="javascript:void(0);")
-									|	menu 3
+									|	pratham
 							li.sl-sidebar__action
 								a(href="javascript:void(0);")
-									|	menu 4
+									|	bhupi
+							li.sl-sidebar__action
+								a(href="javascript:void(0);")
+									|	shivam
+		ul.sl-sidebar__inner-list
+			li.sl-sidebar__inner-list__item
+				a.sl-sidebar__inner-list__action.js-showrooms(href="javascript:void(0);")
+					|	showrooms
+			li.sl-sidebar__inner-list__item
+				a.sl-sidebar__inner-list__action(href="javascript:void(0);")
+					|	contact us
+			li.sl-sidebar__inner-list__item
+				a.sl-sidebar__inner-list__action(href="javascript:void(0);")
+					|	about us
+			li.sl-sidebar__inner-list__item
+				a.sl-sidebar__inner-list__action(href="javascript:void(0);")
+					|	customize design
+			li.sl-sidebar__inner-list__item
+				.panel-group
+					.panel.panel-default.knowledge-panel
+						.panel-heading
+							h4.panel-title
+								a.sl-sidebar__inner-list__action(data-toggle='collapse', href='#knowledge')
+									|	knowledge guide
+						#knowledge.panel-collapse.collapse
+							.panel-body
+								ul.sl-sidebar__sub-menu
+									li.sl-sidebar__action
+										a(href="javascript:void(0);")
+											|	gold
+									li.sl-sidebar__action
+										a(href="javascript:void(0);")
+											|	diamond
+									li.sl-sidebar__action
+										a(href="javascript:void(0);")
+											|	platinum
 
 	.sl-sidebar__footer
 		ul.sl-sidebar__actions
