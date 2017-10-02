@@ -1,13 +1,21 @@
-head
-    meta(charset="UTF-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1")
-    
-    link(rel="favicon"  href="favicon.ico")
-    link(href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400" rel="stylesheet")
-    link(href="https://fonts.googleapis.com/css?family=Raleway:300,500,600" rel="stylesheet")
-    link(href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
-    link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css" rel="stylesheet")
+mixin head(page_name)
+	meta(charset="UTF-8")
+	meta(name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no")
+	link(rel="icon shortcut" type="image/png" href="./img/favicon.ico")
 
-    link(href="css/main.css" rel="stylesheet")
+	if(page_name === "home")
+		title Shilpa lIfestyle - Home
+	else if(page_name === "rajasthan")
+		title Shilpa lIfestyle - Rajputana
 
-    title Shilpa Lifestyle
+	meta(name= "description", content= "")
+	meta(name= "keywords", content= "")
+
+	link(rel="favicon"  href="favicon.ico")
+
+	link(href="https://fonts.googleapis.com/css?family=Raleway:300,500,600" rel="stylesheet")
+	link(href="https://fonts.googleapis.com/css?family=Playfair+Display+SC:400" rel="stylesheet")
+	link(href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet")
+	link(href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.min.css" rel="stylesheet")
+
+	link(rel= "stylesheet", href= "css/main.css")

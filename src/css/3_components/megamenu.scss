@@ -32,9 +32,13 @@
         }
     }
 
-    &__tabs {
+    &__tab {
         display: flex;
         flex-direction: column;
+        min-width: 90%;
+        &:first-child {
+            border-bottom: 1px solid lighten($golden-2, 20%);
+        }
     }
 
     &__tab {

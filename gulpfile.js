@@ -72,6 +72,7 @@ gulp.task('sass', function () {
   return gulp.src('./src/css/main.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
+    // .pipe(sass())
     .pipe(autoprefixer())
     .pipe(cssmin())
     .pipe(sourcemaps.write())

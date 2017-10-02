@@ -1,0 +1,20 @@
+doctype html
+html
+	- var page_name= "rajasthan"
+	head
+
+		include jade/base/head.jade
+		+head(page_name)
+
+	body
+		include ./jade/base/header.jade
+		
+		main
+			include ./jade/layouts/rajasthan/banner.jade
+			include ./jade/layouts/rajasthan/tale.jade
+
+		include ./jade/base/footer.jade
+		
+		include ./jade/components/sidebar.jade
+
+		include ./jade/base/scripts.jade

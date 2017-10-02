@@ -1,0 +1,101 @@
+.rajasthan-tale {
+    padding: 40px;
+    background-color: #f9f5ee;
+    position: relative;
+
+    @media (min-width: $screen-md) {
+        padding: 60px;
+    }
+
+}
+
+.tale {
+    z-index: 999;
+    position: relative;
+    width: 80%;
+    display: block;
+    margin: 0 auto;
+
+    @media (min-width: 600px) {
+        width: 450px;
+    }
+
+    &__heading {
+        font-family: $playfair-dc;
+        font-size: 26px;
+        margin-bottom: 30px;
+        color: $blue-f5d;
+        @media (min-width: $screen-md) {
+            font-size: 34px;
+        }
+    }
+
+    &__desc {
+        font-family: $raleway;
+        font-size: 12px;
+        line-height: 34px;
+        text-align: justify;
+    }
+
+    &__img {
+        height: 150px;
+        z-index: 999;
+        position: relative;
+
+        @media (min-width: $screen-md) {
+            height: 150px;
+            position: absolute;
+        }
+        @media (min-width: $screen-lg) {
+            height: 200px;
+        }
+        @media (min-width: 1070px) {
+            height: 230px;
+        }
+        @media (min-width: $screen-xlg) {
+            height: 300px;
+        }
+
+        &--1 {
+            display: block;
+            margin-right: auto;
+            @media (min-width: $screen-md) {
+                top: 0;
+                left: -10px;
+            }
+            @media (min-width: $screen-lg) {
+                top: 15%;
+                left: 20px;
+            }
+            @media (min-width: 1070px) {
+                left: 0px;
+            }
+            @media (min-width: $screen-xlg) {
+                right: 0px;
+                top: 5%;
+            }
+        }
+
+        &--2 {
+            display: block;
+            margin-left: auto;
+            @media (min-width: $screen-md) {
+                bottom: 0;
+                right: -10px;
+            }
+            @media (min-width: $screen-lg) {
+                bottom: 10%;
+                right: 30px;
+            }
+            @media (min-width: 1070px) {
+                right: 0px;
+            }
+            @media (min-width: xlg) {
+                right: 0px;
+                bottom: 5%;
+            }
+        }
+
+    }
+
+}
