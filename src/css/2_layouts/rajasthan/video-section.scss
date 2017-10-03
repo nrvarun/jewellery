@@ -1,0 +1,110 @@
+.rajasthan-video {
+    padding: 20px;
+    
+    background: url('../img/rajasthan/video-section-bg.png') no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    @media (min-width: $screen-md) {
+        padding: 60px 40px;
+    }
+
+    @media (min-width: $screen-lg) {
+        padding: 100px 50px;
+    }
+
+    &-container {
+        @media (min-width: $screen-md) {
+            display: flex;
+            justify-content: center;
+        }
+    }
+
+    &__wrapper {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        flex: 1 1 30%;
+        @media (min-width: $screen-lg) {
+            flex: 1 1 40%;
+        }
+    }
+
+    &__card-wrapper {
+        flex: 1 1 70%;
+        @media (min-width: $screen-lg) {
+            flex: 1 1 60%;
+        }
+    }
+
+    &__logo {
+        height: 100px;
+        margin: 0 auto;
+        display: block;
+        margin-bottom: 20px;
+    }
+
+    &__desc {
+        font-family: $raleway;
+        font-size: 12px;
+        font-weight: 300;
+        line-height: 22px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    &__play-btn {
+        &,
+        &:active,
+        &:focus,
+        &:hover {
+            display: block;
+            margin: 0 auto;
+            text-align: center;
+            width: 120px;
+            color: $white;
+            text-transform: uppercase;
+            font-weight: 400;
+            font-family: $raleway;
+            padding: 10px;
+            background-color: $golden-2;
+            border-radius: 26px;
+            text-decoration: none;
+        }
+    }
+
+    &__card {
+        transform: translateX(40px);
+        height: 200px;
+        margin: 40px 0;
+        padding: 20px 0px 20px 20px;
+        box-shadow: 1px 5px 18px 0px rgba(0,0,0 , 0.07);
+
+        @media (min-width: 430px) {
+            height: 300px;
+        }
+        @media (min-width: $screen-sm) {
+            height: 350px;
+        }
+        @media (min-width: 600px) {
+            height: 400px;
+        }
+        @media (min-width: $screen-md) {
+            height: 450px;
+            transform: translateX(80px);
+        }
+        @media (min-width: $screen-lg) {
+            height: 500px;
+            transform: translateX(150px);
+        }
+
+    }
+
+    &__card-img {
+        height: 100%;
+        width: 100%;
+    }
+
+}

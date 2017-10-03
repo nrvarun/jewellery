@@ -1,0 +1,138 @@
+.rajasthan-jewels {
+    padding: 40px 20px;
+
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+
+        @media (min-width: $screen-md) {
+            margin: 50px;
+        }
+
+    }
+
+    &__content-wrapper {
+        position: relative;
+        height: 70px;
+        width: 100%;
+    }
+
+    &__heading {
+        font-family: $playfair-dc;
+        font-size: 24px;
+        color: $blue-f5d;
+        margin-right: auto;
+        position: absolute;
+        top: 10px;
+        left: 10px;
+
+        @media (min-width: 550px) {
+            left: 80px;
+        }
+
+        @media (min-width: 700px) {
+            left: 120px;
+        }
+        
+        @media (min-width: $screen-md) {
+            left: 20px;
+            top: 0px;
+        }
+        
+        @media (min-width: $screen-lg) {
+            left: 50px;
+        }
+        
+        @media (min-width: $screen-xlg) {
+            left: 110px;
+        }
+        
+
+    }
+
+    &__sub-heading {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        font-family: $playfair-dc;
+        font-size: 18px;
+        line-height: 14px;
+        color: $blue-f5d;
+        margin-left: auto;
+        margin-top: 70px;
+        width: auto;
+        span {
+            font-size: 12px;
+        }
+
+        @media (min-width: 550px) {
+            right: 50px;
+        }
+        
+        @media (min-width: 700px) {
+            right: 80px;
+        }
+
+        @media (min-width: $screen-md) {
+            right: -30px;
+            margin-top: 70px;
+        }
+        
+        @media (min-width: $screen-lg) {
+            right: 0px;
+        }
+
+        @media (min-width: $screen-xlg) {
+            right: 50px;
+        }
+
+    }
+
+    &__card-img {
+        height: 250px;
+        width: 100%;
+        position: absolute;
+        top: 30px;
+        right: -32px;
+    }
+
+    &__card-wrapper {
+        position: relative;
+    }
+
+    &__card {
+        margin-top: 10px;
+        padding: 20px;
+        height: 220px;
+        width: 200px;
+        box-shadow: 1px 5px 18px 0 #ccc;
+    }
+
+    &__data-card {
+        margin-top: 100px;
+        padding: 20px;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+        box-shadow: 1px 5px 18px 0 #ccc;
+
+        &__title {
+            color: $blue-f5d;
+            font-family: $playfair-dc;
+        }
+
+        &__sub-title {
+            font-family: $raleway;
+            margin-bottom: 30px;
+        }
+
+        &__desc {
+            font-family: $raleway;
+            margin-bottom: 30px;
+        }
+
+    }
+
+}
