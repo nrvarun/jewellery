@@ -6,7 +6,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
-
+        margin: 30px;
         @media (min-width: $screen-md) {
             margin: 50px;
         }
@@ -26,36 +26,61 @@
         margin-right: auto;
         position: absolute;
         top: 10px;
-        left: 10px;
-
-        @media (min-width: 550px) {
-            left: 80px;
-        }
-
-        @media (min-width: 700px) {
-            left: 120px;
-        }
         
-        @media (min-width: $screen-md) {
-            left: 20px;
-            top: 0px;
+        &--1 {
+            left: 10px;
+            
+            @media (min-width: 550px) {
+                left: 80px;
+            }
+    
+            @media (min-width: 700px) {
+                left: 120px;
+            }
+            
+            @media (min-width: $screen-md) {
+                left: 20px;
+                top: 0px;
+            }
+            
+            @media (min-width: $screen-lg) {
+                left: 50px;
+            }
+            
+            @media (min-width: $screen-xlg) {
+                left: 110px;
+            }
         }
-        
-        @media (min-width: $screen-lg) {
-            left: 50px;
+        &--2 {
+            right: 10px;
+            
+            @media (min-width: 550px) {
+                right: 80px;
+            }
+    
+            @media (min-width: 700px) {
+                right: 120px;
+            }
+            
+            @media (min-width: $screen-md) {
+                right: 20px;
+                top: 0px;
+            }
+            
+            @media (min-width: $screen-lg) {
+                right: 50px;
+            }
+            
+            @media (min-width: $screen-xlg) {
+                right: 110px;
+            }
         }
-        
-        @media (min-width: $screen-xlg) {
-            left: 110px;
-        }
-        
 
     }
 
     &__sub-heading {
         position: absolute;
         top: 10px;
-        right: 10px;
         font-family: $playfair-dc;
         font-size: 18px;
         line-height: 14px;
@@ -63,29 +88,60 @@
         margin-left: auto;
         margin-top: 70px;
         width: auto;
+
         span {
             font-size: 12px;
         }
 
-        @media (min-width: 550px) {
-            right: 50px;
-        }
-        
-        @media (min-width: 700px) {
-            right: 80px;
-        }
+        &--1 {
 
-        @media (min-width: $screen-md) {
-            right: -30px;
-            margin-top: 70px;
-        }
-        
-        @media (min-width: $screen-lg) {
-            right: 0px;
-        }
+            right: 10px;
 
-        @media (min-width: $screen-xlg) {
-            right: 50px;
+            @media (min-width: 550px) {
+                right: 50px;
+            }
+            
+            @media (min-width: 700px) {
+                right: 80px;
+            }
+    
+            @media (min-width: $screen-md) {
+                right: -30px;
+                margin-top: 70px;
+            }
+            
+            @media (min-width: $screen-lg) {
+                right: 0px;
+            }
+    
+            @media (min-width: $screen-xlg) {
+                right: 50px;
+            }
+        }
+        &--2 {
+
+            left: 10px;
+
+            @media (min-width: 550px) {
+                left: 50px;
+            }
+            
+            @media (min-width: 700px) {
+                left: 80px;
+            }
+    
+            @media (min-width: $screen-md) {
+                left: -30px;
+                margin-top: 70px;
+            }
+            
+            @media (min-width: $screen-lg) {
+                left: 0px;
+            }
+    
+            @media (min-width: $screen-xlg) {
+                left: 50px;
+            }
         }
 
     }
@@ -95,7 +151,12 @@
         width: 100%;
         position: absolute;
         top: 30px;
-        right: -32px;
+        &--1 {
+            right: -32px;
+        }
+        &--2 {
+            left: -32px;
+        }
     }
 
     &__card-wrapper {
