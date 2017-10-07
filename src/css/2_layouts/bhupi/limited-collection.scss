@@ -1,0 +1,67 @@
+.bhupi-collection {
+
+    padding: 0 20px 20px 20px;
+
+    // @media (min-width: $screen-md) {
+    //     padding: 0px 0 100px 0px;
+    // }
+
+    &__title {
+        font-family: $playfair-dc;
+        font-size: 20px;
+        color: #333333;
+        line-height: 38px;
+    }
+
+    &__desc {
+        font-family: $raleway;
+        color: #666666;
+        font-size: 12px;
+        line-height: 22px;
+        margin-bottom: 50px;
+    }
+
+    &__slider {
+        padding-top: 40px;
+    }
+
+    &__slide {
+
+        transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
+        transition-delay: 300ms;
+
+        &.slick-slide {
+            opacity: 0.5;
+            transform: scale(0.5);
+        }
+
+        &.slick-current.slick-active {
+            opacity: 1;
+            transform: scale(1);
+        }
+
+        text-align: center;
+
+        &__img {
+            height: 120px;
+            margin: 0 auto;
+            display: block;
+        }
+
+        &__title {
+            font-family: $raleway;
+            font-weight: 400;
+            font-size: 16px;
+            margin-top: 10px;
+            margin-bottom: 0;
+        }
+
+        &__sub-title {
+            font-family: $raleway;
+            font-weight: 300;
+            font-size: 14px;
+        }
+
+    }
+
+}

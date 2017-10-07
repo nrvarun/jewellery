@@ -1,0 +1,187 @@
+.bhupi-banner {
+
+    padding: 0px 0px 30px 0px;
+
+    @media (min-width: 550px){
+        padding-bottom: 80px;
+    }
+
+    &__wrapper {
+        @media (min-width: $screen-md) {
+            // margin-right: 10%;
+        }
+    }
+
+    &__slider {
+        list-style-type: none;
+        padding: 0;
+        margin: 0 15px;
+
+        @media (min-width: $screen-md) {
+            width: 70%;
+        }
+
+        .arrow-wrapper {
+            position: absolute;
+            bottom: -10px;
+            left: 0;
+            z-index: 999;
+            cursor: pointer;
+
+            &--left {
+
+            }
+
+            &--right {
+                left: 20px;
+                @media (min-width: 550px) {
+                    left: 35px;
+                }
+            }
+
+        }
+
+        .icon-arrow-left {
+            padding: 5px;
+            color: $white;
+            background-color: #000000;
+
+            @media (min-width: 550px) {
+                padding: 10px;
+                font-size: 16px;
+            }
+
+        }
+        .icon-arrow-right {
+            color: $white;
+            padding: 5px;
+            background-color: #80a163;
+            
+            @media (min-width: 550px) {
+                padding: 10px;
+                font-size: 16px;
+            }
+
+        }
+
+    }
+
+    &__slider-img {
+        height: 100%;
+        width: 100%;
+    }
+
+    &__content {
+        position: absolute;
+        top: 40px;
+        display: none;
+
+        @media (min-width: $screen-md) {
+            display: block;
+            right: -90px;
+        }
+        @media (min-width: $screen-lg) {
+            right: 0;
+            margin-top: 50px;
+        }
+
+    }
+
+    &__heading {
+        font-family: $playfair-dc;
+        color: #80a163;
+        margin: 0;
+        letter-spacing: 0.4px;
+        @media (min-width: $screen-md) {
+            font-size: 20px;
+            span {
+                font-size: 30px;
+            }
+        }
+        @media (min-width: $screen-lg) {
+            font-size: 25px;
+            span {
+                font-size: 40px;
+            }
+        }
+        @media (min-width: $screen-xlg) {
+            font-size: 35px;
+            span {
+                font-size: 50px;
+            }
+        }
+    }
+
+    &__sub-heading {
+        font-family: $playfair-dc;
+        font-size: 12px;
+        color: #80a163;
+        @media (min-width: $screen-md) {
+            width: 80%;
+        }
+        @media (min-width: $screen-lg) {
+            width: 100%;
+        }
+    }
+
+    &__card {
+        position: absolute;
+        bottom: -20px;
+        right: 40px;
+        text-align: center;
+
+        padding: 20px;
+        background-color: $white;
+        box-shadow: 0px 0px 13px 0px lighten(#000000, 70%);
+        width: 250px;
+
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -10px;
+            left: -10px;
+            height: 20px;
+            width: 20px;
+            background-color: #80a163;
+            
+            @media (min-width: $screen-md) {
+                height: 25px;
+                width: 25px;
+            }
+            
+            @media (min-width: $screen-lg) {
+                height: 30px;
+                width: 30px;
+            }
+
+        }
+        
+
+        @media (min-width: 550px) {
+            width: 350px;
+            padding: 40px;
+            bottom: -50px;
+            right: 50px;
+        }
+       
+        @media (min-width: $screen-lg) {
+            width: 450px;
+            padding: 50px 60px;
+            bottom: -50px;
+            right: 50px;
+        }
+
+        img {
+            margin: 0 auto;
+            display: block;
+            height: 70px;
+            margin-bottom: 20px;
+            @media (min-width: $screen-lg) {
+                height: 100px;
+            }
+        }
+
+    }
+
+}

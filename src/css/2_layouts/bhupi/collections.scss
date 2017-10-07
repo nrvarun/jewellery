@@ -1,0 +1,70 @@
+.bhupi-collections {
+    padding: 40px 20px;
+
+    &__heading {
+        font-family: $playfair-dc;
+        font-size: 40px;
+        letter-spacing: 0.5px;
+        margin-bottom: 40px;
+        margin-top: 0;
+        color: #c8c8bd;
+
+        @media (min-width: $screen-lg) {
+            font-size: 50px;
+        }
+
+    }
+
+    &__img-slider {
+        list-style-type: none;
+        padding: 20px;
+        box-shadow: 0px 0px 13px 0px #999;
+    }
+
+    &__nav-slider {
+        padding: 0;
+        list-style-type: none;
+    }
+    
+    &__nav-slide {
+        padding: 10px;
+        margin: 10px;
+        box-shadow: 0px 0px 13px 0px #999;
+
+        &.slick-slide {
+            opacity: 0.5;
+            transition: all 0.5s ease;
+        }
+
+        &.slick-current.slick-active {
+            opacity: 1;
+        }
+
+        img {
+            width: 100%;
+        }
+
+    }
+
+    &__slider-index {
+        position: absolute;
+        top: -5px;
+        right: 8px;
+        color: white;
+        background-color: #80a163;
+        padding: 10px 15px;
+        font-size: 14px;
+        text-align: center;
+        z-index: 999;
+    }
+
+    &__img-slide {
+        
+        img {
+            width: 100%;
+            height: 100%;
+        }
+
+    }
+
+}
