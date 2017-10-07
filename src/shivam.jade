@@ -1,0 +1,21 @@
+doctype html
+html
+	- var page_name= "shivam"
+	head
+
+		include jade/base/head.jade
+		+head(page_name)
+
+	body
+		include ./jade/base/header.jade
+		
+		main.shivam-main
+			include ./jade/layouts/shivam/banner.jade
+			include ./jade/layouts/shivam/temple-collections.jade
+			include ./jade/layouts/shivam/collections.jade
+
+		include ./jade/base/footer.jade
+		
+		include ./jade/components/sidebar.jade
+
+		include ./jade/base/scripts.jade
