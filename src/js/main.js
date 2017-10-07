@@ -50,9 +50,7 @@ $(document).ready(function(){
 	$('html,body').on('click', function(e){
 
 		var target = $(e.target)[0].classList;
-
-		console.log(target.contains('sl-overlay'));
-
+		
 		if(target.contains('sl-overlay')){
 			if($('.sl-sidebar').hasClass('show')){
 				console.log('sidebar open');

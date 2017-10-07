@@ -38,6 +38,10 @@ $(document).ready(function () {
     speed: 600,
     slidesToShow: 1,
     asNavFor: '.bhupi-collections__nav-slider',
+  })
+  .on('init', function(event, slick){
+    // let's do this after we init the banner slider
+    console.log('slider was initialized');
   });
   
   // Bhupi Collections Navigation slider
@@ -64,7 +68,7 @@ $(document).ready(function () {
     ]
   });
 
-  $('.bhupi-collections__img-slider').on('reinit', function(e){
+  $('.bhupi-collections__img-slider').on('init', function(e, slick){
     alert('initiated');
   });
 
