@@ -54,8 +54,11 @@ $(document).ready(function () {
 		autoplay: true,
 		slidesToShow: 3,
 		slidesToScroll: 1,
-		vertical: true
+		vertical: true,
+		verticalSwiping: true
 	});
+	
+	$('.temple-collections__data-slider').slick();
 
 	// Bhupi Collections slider 2
 	$('.bhupi-collections__img-slider').slick({
@@ -162,4 +165,23 @@ $('.bhupi-collection__slider').slick({
 			}
 		}
 	]
+});
+
+//Shivam Slider 2
+$(document).ready(function(){
+	
+	$('.temple-collections__nav-item').on('click', function(e){
+		console.log('item clicked');
+
+		var index = $(this).parent().attr('data-slick-index');
+
+		console.log($(this).parent().removeClass('slick-current'));
+		console.log($(this).parent().index());
+
+		$('.temple-collections__coin-slide2').removeClass('slick-current');
+		$(this).parent().addClass('slick-current');
+
+		$('.temple-collections__data-slider').slick('slickGoTo', index);
+	});
+
 });

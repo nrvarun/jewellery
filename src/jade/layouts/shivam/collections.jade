@@ -2,3 +2,55 @@ section.shivam-collections
     .container
         .row
             .col-sm-12
+                h2.shivam-collections__heading
+                    |   collections
+        .row
+            .col-sm-4
+                .shivam-collections__accordions
+                    #accordion.panel-group
+                        .panel.panel-default
+                            .panel-heading
+                                h4.panel-title
+                                    a(data-toggle='collapse', data-parent='#accordion', href='#collapse1')
+                                        | Collapsible Group 1
+                            #collapse1.panel-collapse.collapse.in
+                                .panel-body
+                                    ul.coin-list
+                                        li
+                                            a(href="javascript:void(0);")
+                                                h2.temple-collections__nav-item__number
+                                                    |	02
+                                                h2.temple-collections__nav-item__content
+                                                    |	coin name
+                                                    br
+                                                    span
+                                                        |	coin name
+                                        li
+                                            a(href="javascript:void(0);")
+                                                |   Coin name 2
+                                        li
+                                            a(href="javascript:void(0);")
+                                                |   Coin name 3
+                        .panel.panel-default
+                            .panel-heading
+                                h4.panel-title
+                                    a(data-toggle='collapse', data-parent='#accordion', href='#collapse2')
+                                        | Collapsible Group 2
+                            #collapse2.panel-collapse.collapse
+                                .panel-body
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    | minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    | commodo consequat.
+                        .panel.panel-default
+                            .panel-heading
+                                h4.panel-title
+                                    a(data-toggle='collapse', data-parent='#accordion', href='#collapse3')
+                                        | Collapsible Group 3
+                            #collapse3.panel-collapse.collapse
+                                .panel-body
+                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                                    | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                    | minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                                    | commodo consequat.
+

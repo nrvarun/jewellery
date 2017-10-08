@@ -3,5 +3,23 @@
     padding: 50px;
     background-color: #f4f5f7;
 
+    &__heading {
+        font-family: $playfair-dc;
+        font-size: 40px;
+        color: #512d1c;
+        margin-bottom: 20px;
+    }
+
+    &__accordions {
+
+        .panel {
+            border: 0;
+        }
+
+        .panel-collapse {
+            background-color: #f4f5f7;
+        }
+
+    }
 
 }

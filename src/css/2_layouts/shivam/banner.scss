@@ -36,6 +36,7 @@
 
         &__coin-img {
             width: 70px;
+            margin: 0 auto;
             @media (min-width: $screen-md) {
                 width: 150px;
             }

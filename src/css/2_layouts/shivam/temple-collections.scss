@@ -37,10 +37,17 @@
     }
 
     &__data-content {
+        width: 100%;
         padding: 30px 40px;
+
         @media (min-width: $screen-md) {
             padding: 40px 80px;
         }
+    }
+
+    &__data-slider {
+        // height: 100%;
+        // width: 100%;
     }
 
     &__data-img {
@@ -65,15 +72,20 @@
         font-family: $raleway;
     }
 
+    &__coin-slide2 {
+        position: relative;
+    }
+
     &__coin-slider2 {
         list-style-type: none;
         margin: 20px 0;
-    }
-
-    .slick-current.slick-active {
-        .temple-collections__nav-item__content {
-            font-weight: 700;
+        
+        .slick-current.slick-active {    
+            .temple-collections__nav-item__content {
+                font-weight: 700;
+            }
         }
+    
     }
 
     &__nav-item {
@@ -105,7 +117,7 @@
             font-weight: 300;
             margin-left: 20px;
             span {
-                font-size: 20px;
+                font-size: 15px;
                 font-weight: 300;
             }
 
