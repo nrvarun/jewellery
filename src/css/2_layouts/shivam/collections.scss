@@ -14,12 +14,149 @@
 
         .panel {
             border: 0;
+            box-shadow: none;
         }
 
         .panel-collapse {
             background-color: #f4f5f7;
         }
 
+    }
+
+    &__accordion-link {
+        display: flex;
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            text-decoration: none;
+        }
+    }
+
+}
+
+.coin-list {
+
+    &__item {
+
+    }
+
+    &__nav-link {
+        font-family: $raleway;
+        font-size: 14px;
+        color: #512d1c; 
+    }
+
+}
+
+.coin-slider {
+    list-style-type: none;
+    padding-left: 0;
+    border-bottom: 1px solid #ececec;
+
+    @media (min-width: $screen-lg) {
+        width: 700px;
+    }
+
+    &__slide {
+        margin-right: 10px;
+        padding-bottom: 30px;
+        position: relative;
+        transition: opacity 1s ease;
+
+        &.slick-slide {
+            opacity: 0.5;
+        }
+
+        &.slick-current.slick-active {
+            opacity: 1;
+
+            &:after {
+                content: '';
+                position: absolute;
+                bottom: 0px;
+                height: 1px;
+                width: 100%;
+                background-color: #512d1c;
+            }
+
+        }
+
+    }
+
+    &__head {
+        padding: 50px 40px;
+        background-color: $white;
+    }
+
+    &__img {
+        height: 120px;
+    }
+
+    &__footer {
+        background-color: #512d1c; 
+        padding: 10px 40px;
+        position: relative;
+    }
+
+    &__coin-name {
+        font-family: $playfair-dc;
+        font-size: 20px;
+        color: $white;
+        margin: 0px;
+    }
+
+    &__coin-desc {
+        font-family: $playfair-dc;
+        font-size: 12px;
+        color: $white;
+    }
+
+    &__action-btn {
+        &,
+        &:hover,
+        &:active,
+        &:focus {
+            color: $white;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+        }
+    }
+
+}
+
+.coin-content {
+
+    position: absolute;
+
+    &--1 {
+        display: block;
+        opacity: 0;
+        &.active {
+            // display: block;
+            opacity: 1;
+            transition: opacity 3s ease;
+        }
+    }
+
+    &--2 {
+        display: block;
+        opacity: 0;
+        &.active {
+            // display: block;
+            opacity: 1;
+            transition: opacity 3s ease;
+        }
+    }
+
+    &--3 {
+        display: block;
+        opacity: 0;
+        &.active {
+            opacity: 1;
+            transition: opacity 3s ease;
+        }
     }
 
 }

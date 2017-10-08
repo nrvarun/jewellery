@@ -183,5 +183,66 @@ $(document).ready(function(){
 
 		$('.temple-collections__data-slider').slick('slickGoTo', index);
 	});
+	
+	$('.coin-slider').slick({
+		arrows: false,
+		dots: false,
+		variableWidth: true,
+		centreMode: true,
+		infinite: true,
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		autoplay: true
+	});
+
+	
+	$('.js-coin-accordion').on('show.bs.collapse', function (e) {
+		// do something…
+		console.log($(this)[0].id);
+
+		var id = $(this)[0].id;
+
+		// $('.panel').removeClass('active');
+		// $(this).parents('.panel').addClass('active');
+
+		if(id == 'coin1'){
+			$('.coin-content').removeClass('active');
+			$('.coin-content--1').addClass('active');
+		}
+
+		if(id == 'coin2'){
+			$('.panel').removeClass('active');
+			$('.coin-content').removeClass('active');
+			$('.coin-content--2').addClass('active');
+		}
+
+		if(id == 'coin3'){
+			$('.panel').removeClass('active');
+			$('.coin-content').removeClass('active');
+			$('.coin-content--3').addClass('active');
+		}		
+
+	});
+
+	if($('.js-coin-accordion.in.collapse')){
+		console.log('well something is open');
+	
+		var id = $('.js-coin-accordion.in.collapse').attr('id');
+		
+		console.log(id);
+
+		if(id == 'coin1'){
+			$('.coin-content--1').addClass('active');
+		}
+		if(id == 'coin2'){
+			$('.coin-content--2').addClass('active');
+		}
+		if(id == 'coin3'){
+			$('.coin-content--3').addClass('active');
+		}
+
+	}
+
+
 
 });

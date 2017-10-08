@@ -10,47 +10,210 @@ section.shivam-collections
                     #accordion.panel-group
                         .panel.panel-default
                             .panel-heading
-                                h4.panel-title
-                                    a(data-toggle='collapse', data-parent='#accordion', href='#collapse1')
-                                        | Collapsible Group 1
-                            #collapse1.panel-collapse.collapse.in
+                                //- h4.panel-title
+                                a.shivam-collections__accordion-link(data-toggle='collapse', data-parent='#accordion', href='#coin1')
+                                    h2.temple-collections__nav-item__number
+                                        |	01
+                                    h2.temple-collections__nav-item__content
+                                        |	coin name
+                                        br
+                                        span
+                                            |	coin name
+                            #coin1.js-coin-accordion.panel-collapse.collapse.in
                                 .panel-body
                                     ul.coin-list
-                                        li
-                                            a(href="javascript:void(0);")
-                                                h2.temple-collections__nav-item__number
-                                                    |	02
-                                                h2.temple-collections__nav-item__content
-                                                    |	coin name
-                                                    br
-                                                    span
-                                                        |	coin name
-                                        li
-                                            a(href="javascript:void(0);")
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 1
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
                                                 |   Coin name 2
-                                        li
-                                            a(href="javascript:void(0);")
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
                                                 |   Coin name 3
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 4
+                        
                         .panel.panel-default
                             .panel-heading
                                 h4.panel-title
-                                    a(data-toggle='collapse', data-parent='#accordion', href='#collapse2')
-                                        | Collapsible Group 2
-                            #collapse2.panel-collapse.collapse
+                                    a.shivam-collections__accordion-link(data-toggle='collapse', data-parent='#accordion', href='#coin2')
+                                        h2.temple-collections__nav-item__number
+                                            |	02
+                                        h2.temple-collections__nav-item__content
+                                            |	coin name
+                                            br
+                                            span
+                                                |	coin name
+                            #coin2.panel-collapse.collapse.js-coin-accordion
                                 .panel-body
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    | minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    | commodo consequat.
+                                    ul.coin-list
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 1
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 2
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 3
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 4
                         .panel.panel-default
                             .panel-heading
                                 h4.panel-title
-                                    a(data-toggle='collapse', data-parent='#accordion', href='#collapse3')
-                                        | Collapsible Group 3
-                            #collapse3.panel-collapse.collapse
+                                    a.shivam-collections__accordion-link(data-toggle='collapse', data-parent='#accordion', href='#coin3')
+                                        h2.temple-collections__nav-item__number
+                                            |	03
+                                        h2.temple-collections__nav-item__content
+                                            |	coin name
+                                            br
+                                            span
+                                                |	coin name
+                            #coin3.panel-collapse.collapse.js-coin-accordion
                                 .panel-body
-                                    | Lorem ipsum dolor sit amet, consectetur adipisicing elit,
-                                    | sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                                    | minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
-                                    | commodo consequat.
+                                    ul.coin-list
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 1
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 2
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 3
+                                        li.coin-list__item
+                                            a.coin-list__nav-link(href="javascript:void(0);")
+                                                |   Coin name 4
+            .col-sm-8
+                .coin-content.coin-content--1
+                    ul.coin-slider
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   coin name
+                                p.coin-slider__coin-desc
+                                    |   1 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   coin name
+                                p.coin-slider__coin-desc
+                                    |   2 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   coin name
+                                p.coin-slider__coin-desc
+                                    |   3 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   coin name
+                                p.coin-slider__coin-desc
+                                    |   4 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+
+                .coin-content.coin-content--2
+                    ul.coin-slider
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   2 coin name
+                                p.coin-slider__coin-desc
+                                    |   1 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   2 coin name
+                                p.coin-slider__coin-desc
+                                    |   2 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   2 coin name
+                                p.coin-slider__coin-desc
+                                    |   3 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   2 coin name
+                                p.coin-slider__coin-desc
+                                    |   4 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+
+                .coin-content.coin-content--3
+                    ul.coin-slider
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   3 coin name
+                                p.coin-slider__coin-desc
+                                    |   1 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   3 coin name
+                                p.coin-slider__coin-desc
+                                    |   2 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   3 coin name
+                                p.coin-slider__coin-desc
+                                    |   3 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
+                        li.coin-slider__slide
+                            .coin-slider__head
+                                img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
+                            .coin-slider__footer
+                                h2.coin-slider__coin-name
+                                    |   3 coin name
+                                p.coin-slider__coin-desc
+                                    |   4 lorem ipsum
+                                a.coin-slider__action-btn(href="javascript:void(0);")
+                                    i.icon-arrow-right
 
