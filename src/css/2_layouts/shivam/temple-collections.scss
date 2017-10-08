@@ -5,16 +5,31 @@
     &__wrapper {
         background-color: $white;
         padding: 50px 40px 80px 40px;
+        @media (min-width: $screen-md) {
+            padding: 50px 20px 80px 20px;
+        }
+        @media (min-width: 880px) {
+            padding: 50px 40px 80px 40px;
+        }
     }
 
     &__data-wrapper {
         display: flex;
-        margin-top: 100px;
-        height: 550px;
+        margin-top: 50px;
+    }
+
+    &__coin-slide {
+        position: relative;
     }
 
     &__coin-slider {
         padding: 0;
+        position: relative;
+        transform: translateY(-120px);
+        display: none;
+        @media (min-width: $screen-md) {
+            display: block;
+        }
     }
 
     &__heading {
@@ -25,14 +40,13 @@
     }
 
     &__bg-content {
-        // height: 500px;
+        height: 100%;
         width: 0px;
         margin-bottom: 30px;
         @media (min-width: $screen-md) {
             position: absolute;
             width: 130px;
-            left: -100px;   
-            height: 550px;
+            left: -100px;
         }
     }
 
@@ -41,18 +55,20 @@
         padding: 30px 40px;
 
         @media (min-width: $screen-md) {
-            padding: 40px 80px;
+            padding: 40px 0 40px 80px;
         }
     }
 
     &__data-slider {
-        // height: 100%;
-        // width: 100%;
+        padding: 0;
     }
 
     &__data-img {
-        height: 150px;
+        height: 110px;
         margin-bottom: 40px;
+        @media (min-width: $screen-md) {
+            height: 80px;
+        }
     }
 
     &__data-title {
@@ -79,6 +95,10 @@
     &__coin-slider2 {
         list-style-type: none;
         margin: 20px 0;
+
+        @media (min-width: $screen-md) {
+            padding: 0;
+        }
         
         .slick-current.slick-active {    
             .temple-collections__nav-item__content {
@@ -119,6 +139,20 @@
             span {
                 font-size: 15px;
                 font-weight: 300;
+            }
+
+            @media (min-width: $screen-md) {
+                font-size: 15px;
+                span {
+                    font-size: 13px;
+                }
+            }
+
+            @media (min-width: $screen-lg) {
+                font-size: 20px;
+                span {
+                    font-size: 16px;
+                }
             }
 
         }

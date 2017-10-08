@@ -1,6 +1,6 @@
 .shivam-collections {
 
-    padding: 50px;
+    padding: 20px;
     background-color: #f4f5f7;
 
     &__heading {
@@ -55,7 +55,7 @@
     border-bottom: 1px solid #ececec;
 
     @media (min-width: $screen-lg) {
-        width: 700px;
+        margin: 20px 50px;
     }
 
     &__slide {

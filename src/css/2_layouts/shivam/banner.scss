@@ -2,7 +2,6 @@
 .shivam-main {
     background: url('../img/shivam/bg-pattern.png');
     background-repeat: repeat;
-    background-size: cover;
 }
 
 .shivam-banner {
@@ -38,7 +37,7 @@
             width: 70px;
             margin: 0 auto;
             @media (min-width: $screen-md) {
-                width: 150px;
+                width: 120px;
             }
         }
     
@@ -162,7 +161,7 @@
             }
            
             @media (min-width: $screen-lg) {
-                padding: 100px 0px 0 20px;
+                padding: 100px 0px 0 0px;
             }
     
             img {
@@ -170,9 +169,6 @@
                 display: block;
                 height: 40px;
                 margin-bottom: 10px;
-                @media (min-width: $screen-lg) {
-                    height: 50px;
-                }
             }
 
             p {
