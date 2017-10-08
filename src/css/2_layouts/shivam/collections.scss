@@ -54,15 +54,13 @@
     padding-left: 0;
     border-bottom: 1px solid #ececec;
 
-    @media (min-width: $screen-lg) {
-        margin: 20px 50px;
-    }
-
     &__slide {
         margin-right: 10px;
         padding-bottom: 30px;
         position: relative;
         transition: opacity 1s ease;
+
+        width: 100px;
 
         &.slick-slide {
             opacity: 0.5;
@@ -90,7 +88,7 @@
     }
 
     &__img {
-        height: 120px;
+        height: 100px;
     }
 
     &__footer {
@@ -128,14 +126,19 @@
 
 .coin-content {
 
-    position: absolute;
+    // position: absolute;
+    // top: 0;
+    // left: 0;
+    // right: 0;
 
     &--1 {
         display: block;
         opacity: 0;
+        height: 0px; 
+        overflow-y: hidden;
         &.active {
-            // display: block;
             opacity: 1;
+            height: auto;
             transition: opacity 3s ease;
         }
     }
@@ -143,9 +146,11 @@
     &--2 {
         display: block;
         opacity: 0;
+        height: 0px; 
+        overflow-y: hidden;
         &.active {
-            // display: block;
             opacity: 1;
+            height: auto;
             transition: opacity 3s ease;
         }
     }
@@ -153,8 +158,11 @@
     &--3 {
         display: block;
         opacity: 0;
+        height: 0px; 
+        overflow-y: hidden;
         &.active {
             opacity: 1;
+            height: auto;
             transition: opacity 3s ease;
         }
     }

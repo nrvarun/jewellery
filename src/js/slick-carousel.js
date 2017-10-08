@@ -184,16 +184,36 @@ $(document).ready(function(){
 		$('.temple-collections__data-slider').slick('slickGoTo', index);
 	});
 	
-	$('.coin-slider').slick({
-		arrows: false,
-		dots: false,
-		variableWidth: true,
-		centreMode: true,
-		infinite: true,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		autoplay: true
-	});
+	function initCoinSlider(){
+		$('.coin-slider').slick({
+			arrows: false,
+			dots: false,
+			// variableWidth: true,
+			// centreMode: true,
+			infinite: true,
+			autoplay: true,
+			slidesToShow: 3,
+			slidesToScroll: 1,
+			mobileFirst: true,
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3,
+						infinite: true
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2
+					}
+				},
+			]
+		});
+	}
+	
+	initCoinSlider();
 
 	
 	$('.js-coin-accordion').on('show.bs.collapse', function (e) {
@@ -206,17 +226,21 @@ $(document).ready(function(){
 		// $(this).parents('.panel').addClass('active');
 
 		if(id == 'coin1'){
+			$('.coin-slider').get(0).slick.setPosition();
 			$('.coin-content').removeClass('active');
 			$('.coin-content--1').addClass('active');
 		}
 
 		if(id == 'coin2'){
+			$('.coin-slider').get(0).slick.setPosition();
 			$('.panel').removeClass('active');
 			$('.coin-content').removeClass('active');
 			$('.coin-content--2').addClass('active');
+			
 		}
 
 		if(id == 'coin3'){
+			$('.coin-slider').get(0).slick.setPosition();
 			$('.panel').removeClass('active');
 			$('.coin-content').removeClass('active');
 			$('.coin-content--3').addClass('active');
@@ -231,7 +255,7 @@ $(document).ready(function(){
 		
 		console.log(id);
 
-		if(id == 'coin1'){
+		if(id == 'coin1'){			
 			$('.coin-content--1').addClass('active');
 		}
 		if(id == 'coin2'){
