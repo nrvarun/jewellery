@@ -63,17 +63,29 @@
             display: block;
             margin: 0 auto;
             text-align: center;
-            width: 120px;
             color: $white;
+            position: relative;
             text-transform: uppercase;
             font-weight: 400;
             font-family: $raleway;
-            padding: 10px;
+            padding: 10px 25px 10px 35px;
             background-color: $golden-2;
             border-radius: 26px;
             text-decoration: none;
             box-shadow: 1px 5px 18px 0 #a7833e;
         }
+
+        &:before {
+            top: 12px;
+            left: 20px;
+            content: '';
+            width: 10px;
+            height: 10px;
+            position: absolute;
+            background: url('../img/play-btn.svg') no-repeat;
+            background-size: cover;
+        }
+
     }
 
     &__card {

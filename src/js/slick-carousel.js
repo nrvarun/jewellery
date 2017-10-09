@@ -5,6 +5,7 @@ $(document).ready(function () {
 		dots: true,
 		arrows: true,
 		infinite: true,
+		autoplay: true,
 		speed: 600,
 		slidesToShow: 1,
 		slidesToScroll: 1
@@ -15,6 +16,7 @@ $(document).ready(function () {
 		dots: true,
 		arrows: true,
 		infinite: true,
+		autoplay: true,
 		speed: 600,
 		slidesToShow: 1,
 		variableWidth: false,
@@ -26,6 +28,7 @@ $(document).ready(function () {
 		dots: true,
 		arrows: true,
 		infinite: true,
+		autoplay: true,
 		speed: 600,
 		slidesToShow: 1
 	});
@@ -44,6 +47,7 @@ $(document).ready(function () {
 		dots: false,
 		arrows: false,
 		infinite: true,
+		autoplay: true,
 		asNavFor: '.shivam-banner__slider'
 	});
 	
@@ -65,6 +69,7 @@ $(document).ready(function () {
 		dots: false,
 		arrows: true,
 		infinite: true,
+		autoplay: true,
 		speed: 600,
 		slidesToShow: 1,
 		asNavFor: '.bhupi-collections__nav-slider',
@@ -75,6 +80,7 @@ $(document).ready(function () {
 		dots: true,
 		arrows: true,
 		infinite: true,
+		autoplay: true,
 		speed: 600,
 		slidesToShow: 2,
 		slidesToScroll: 1,
@@ -112,6 +118,7 @@ $(document).ready(function () {
 		dots: false,
 		arrows: true,
 		infinite: true,
+		autoplay: true,
 		speed: 600,
 		slidesToShow: 1,
 		nextArrow: '<div class="arrow-wrapper arrow-wrapper--right"><i class="icon-arrow-right"></i></div>',
@@ -123,6 +130,7 @@ $(document).ready(function () {
 		dots: false,
 		arrows: true,
 		infinite: true,
+		autoplay: true,
 		speed: 600,
 		slidesToShow: 1,
 		asNavFor: '.temple-collections__coin-slider',
@@ -137,7 +145,7 @@ $('.bhupi-collection__slider').slick({
 	dots: false,
 	arrows: false,
 	infinite: true,
-	autoplay: false,
+	autoplay: true,
 	speed: 600,
 	variableWidth: false,
 	centreMode: true,
