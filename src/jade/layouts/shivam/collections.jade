@@ -1,14 +1,14 @@
 section.shivam-collections
     .container
         .row
-            .col-sm-12
+            .col-sm-12(data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1500")
                 h2.shivam-collections__heading
                     |   collections
         .row
-            .col-sm-5.col-md-3
+            .col-sm-5.col-md-3(data-aos="fade-right" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1500")
                 .shivam-collections__accordions
                     #accordion.panel-group
-                        .panel.panel-default
+                        .panel.panel-default.panel--1
                             .panel-heading
                                 //- h4.panel-title
                                 a.shivam-collections__accordion-link(data-toggle='collapse', data-parent='#accordion', href='#coin1')
@@ -35,7 +35,7 @@ section.shivam-collections
                                             a.coin-list__nav-link(href="javascript:void(0);")
                                                 |   Coin name 4
                         
-                        .panel.panel-default
+                        .panel.panel-default.panel--2
                             .panel-heading
                                 h4.panel-title
                                     a.shivam-collections__accordion-link(data-toggle='collapse', data-parent='#accordion', href='#coin2')
@@ -61,7 +61,7 @@ section.shivam-collections
                                         li.coin-list__item
                                             a.coin-list__nav-link(href="javascript:void(0);")
                                                 |   Coin name 4
-                        .panel.panel-default
+                        .panel.panel-default.panel--3
                             .panel-heading
                                 h4.panel-title
                                     a.shivam-collections__accordion-link(data-toggle='collapse', data-parent='#accordion', href='#coin3')
@@ -88,10 +88,10 @@ section.shivam-collections
                                         li.coin-list__item
                                             a.coin-list__nav-link(href="javascript:void(0);")
                                                 |   Coin name 4
-            .col-sm-7.col-md-9
 
+            .col-sm-7.col-md-9(data-aos="fade-left" data-aos-easing="linear" data-aos-delay="500" data-aos-duration="1500")
                 .coin-content.coin-content--1
-                    ul.coin-slider
+                    ul.coin-slider.coin-slider--1
                         li.coin-slider__slide
                             .coin-slider__head
                                 img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
@@ -134,7 +134,7 @@ section.shivam-collections
                                     i.icon-arrow-right
 
                 .coin-content.coin-content--2
-                    ul.coin-slider
+                    ul.coin-slider.coin-slider--2
                         li.coin-slider__slide
                             .coin-slider__head
                                 img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
@@ -177,7 +177,7 @@ section.shivam-collections
                                     i.icon-arrow-right
 
                 .coin-content.coin-content--3
-                    ul.coin-slider
+                    ul.coin-slider.coin-slider--3
                         li.coin-slider__slide
                             .coin-slider__head
                                 img.coin-slider__img(src="./img/shivam/coin-img.png" alt="gold coin")
