@@ -38,13 +38,20 @@
 .coin-list {
 
     &__item {
-
+        margin: 10px 0;
     }
 
     &__nav-link {
-        font-family: $raleway;
-        font-size: 14px;
-        color: #512d1c; 
+        &,
+        &:hover,
+        &:focus,
+        &:active {
+            font-family: $raleway;
+            font-size: 14px;
+            color: #512d1c;
+            text-decoration: none;
+            margin: 10px 0;
+        }
     }
 
 }

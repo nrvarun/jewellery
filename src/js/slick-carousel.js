@@ -43,7 +43,7 @@ $(document).ready(function () {
 	$('.temple-collections__coin-slider').slick({
 		dots: false,
 		arrows: false,
-		infinite: false,
+		infinite: true,
 		asNavFor: '.shivam-banner__slider'
 	});
 	
@@ -125,6 +125,7 @@ $(document).ready(function () {
 		infinite: true,
 		speed: 600,
 		slidesToShow: 1,
+		asNavFor: '.temple-collections__coin-slider',
 		nextArrow: '<div class="arrow-wrapper arrow-wrapper--right"><i class="icon-arrow-right"></i></div>',
 		prevArrow: '<div class="arrow-wrapper arrow-wrapper--left"><i class="icon-arrow-left"></i></div>'
 	});
@@ -189,7 +190,7 @@ $(document).ready(function(){
 			arrows: false,
 			dots: false,
 			// variableWidth: true,
-			// centreMode: true,
+			centreMode: true,
 			infinite: true,
 			autoplay: true,
 			slidesToShow: 3,
@@ -267,6 +268,12 @@ $(document).ready(function(){
 
 	}
 
+	$('.coin-list__nav-link').on('click touchstart', function(){
 
+		var index = $(this).parent().index();
+
+		$('.coin-slider').slick('slickGoTo', index);
+
+	});
 
 });
