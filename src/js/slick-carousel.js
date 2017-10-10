@@ -314,4 +314,41 @@ $(document).ready(function(){
 		$('.panel--3 .coin-list__item').eq(cIndex).addClass('active');
 	});
 
+
+	//Chocolate Banner Slider
+	$('.chocolate-banner__slider').slick({
+		dots: true,
+		arrows: false,
+		infinite: true,
+		autoplay: true,
+		speed: 1000,
+		slidesToShow: 1
+	});
+	
+	//Chocolate Collections Slider
+	$('.chocolate-collections__slider').slick({
+		dots: true,
+		arrows: false,
+		infinite: true,
+		autoplay: true,
+		speed: 1000,
+		slidesToShow: 2,
+		mobileFirst: true,
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					infinite: true
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+		]
+	});
+
 });
