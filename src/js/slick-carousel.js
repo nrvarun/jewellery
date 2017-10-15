@@ -322,7 +322,8 @@ $(document).ready(function(){
 		infinite: true,
 		autoplay: true,
 		speed: 1000,
-		slidesToShow: 1
+		slidesToShow: 1,
+		mobileFirst: true
 	});
 	
 	//Chocolate Collections Slider
@@ -330,25 +331,55 @@ $(document).ready(function(){
 		dots: true,
 		arrows: false,
 		infinite: true,
-		autoplay: true,
+		autoplay: false,
 		speed: 1000,
-		slidesToShow: 2,
+		slidesToShow: 1,
 		mobileFirst: true,
+		variableWidth: true,
+		centreMode: true,
 		responsive: [
 			{
 				breakpoint: 992,
 				settings: {
-					slidesToShow: 3,
+					slidesToShow: 1,
 					infinite: true
 				}
 			},
 			{
 				breakpoint: 768,
 				settings: {
-					slidesToShow: 2
+					slidesToShow: 3
 				}
 			},
 		]
+	});
+
+	$('.chocolate-new-arrivals__slider').slick({
+		dots: true,
+		arrows: false,
+		infinite: true,
+		autoplay: false,
+		speed: 1000,
+		slidesToShow: 1
+	});
+	
+	$('.chocolate-new-arrivals2__slider').slick({
+		dots: true,
+		arrows: false,
+		infinite: true,
+		autoplay: false,
+		speed: 1000,
+		slidesToShow: 1
+	});
+	
+	$('.final-collection__slider').slick({
+		dots: true,
+		arrows: false,
+		infinite: true,
+		autoplay: false,
+		speed: 1000,
+		slidesToShow: 1,
+		variableWidth: true
 	});
 
 });
