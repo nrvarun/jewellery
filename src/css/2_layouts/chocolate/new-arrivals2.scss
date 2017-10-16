@@ -109,6 +109,26 @@
         .slick-dots {
             bottom: -25px;
             z-index: 999;
+
+            li button:before {
+                height: 12px;
+                width: 12px;
+                color: transparent;
+                border: 1px solid #512d1b;
+                border-radius: 30px;
+                font-size: 8px;
+                line-height: 12px;
+            }
+
+            li.slick-active button:before {
+                color: #512d1b;
+                height: 15px;
+                width: 15px;
+                font-size: 9px;
+                line-height: 15px;
+                top: -2px;
+            }
+
             @media (min-width: $screen-md) {
                 bottom: -35px;
                 left: 130px;
@@ -116,6 +136,7 @@
             @media (min-width: $screen-lg) {
                 bottom: -45px;
                 left: 210px;
+                transform: translateX(30%);
             }
         }
 

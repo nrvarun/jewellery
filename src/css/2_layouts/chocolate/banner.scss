@@ -20,7 +20,7 @@
         &:focus,
         &:hover {
             position: absolute;
-            top: 40px;
+            top: 20px;
             left: 0px;
             @media (min-width: $screen-md) {
                 left: 150px;
@@ -90,7 +90,7 @@
         padding: 30px;
         background-color: #faf8f8;
         @media (min-width: $screen-lg) {
-            padding: 30px 70px;
+            padding: 30px 70px 0px 70px;
         }
     }
 
@@ -124,23 +124,54 @@
     }
 
     &__slider-wrapper {
-        background: url('../img/chocolate/slider-bgimg.png') no-repeat;
-        background-size: cover;
-        background-position: center;
+        // background: url('../img/chocolate/slider-bgimg.png') no-repeat;
+        // background-size: cover;
+        // background-position: center;
         min-height: 300px;
         height: 100%;
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        width: 100%;
+        // display: flex;
+        // justify-content: center;
+        // align-items: center;
+
+        .slick-dotted.slick-slider {
+            margin-bottom: 0;
+        }
     }
 
     &__slider {
         list-style-type: none;
+        padding: 0;
         width: 100%;
+        margin: 0;
+        height: 100%;
+        
         .slick-dots {
-            bottom: -50px;
+        
+            bottom: 70px;
             left: 10px;
+        
+            li button:before {
+                height: 12px;
+                width: 12px;
+                color: transparent;
+                border: 1px solid #512d1b;
+                border-radius: 30px;
+                font-size: 8px;
+                line-height: 12px;
+            }
+
+            li.slick-active button:before {
+                color: #512d1b;
+                height: 15px;
+                width: 15px;
+                font-size: 9px;
+                line-height: 15px;
+                top: -2px;
+            }
+
         }
+
     }
 
     &__slide {
@@ -149,18 +180,18 @@
     }
 
     &__slide-img {
-        height: 120px;
-        max-width: 100%;
-        margin: 0 auto;
-        @media (min-width: $screen-md) {
-            height: 150px;
-        }
-        @media (min-width: $screen-lg) {
-            height: 180px;
-        }
-        @media (min-width: $screen-xlg) {
-            height: 220px;
-        }
+        height: 100%;
+        width: 100%;
+        // margin: 0 auto;
+        // @media (min-width: $screen-md) {
+        //     height: 150px;
+        // }
+        // @media (min-width: $screen-lg) {
+        //     height: 180px;
+        // }
+        // @media (min-width: $screen-xlg) {
+        //     height: 220px;
+        // }
     }
 
 }

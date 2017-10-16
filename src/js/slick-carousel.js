@@ -320,7 +320,7 @@ $(document).ready(function(){
 		dots: true,
 		arrows: false,
 		infinite: true,
-		autoplay: true,
+		autoplay: false,
 		speed: 1000,
 		slidesToShow: 1,
 		mobileFirst: true
