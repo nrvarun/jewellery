@@ -125,6 +125,101 @@ $(document).ready(function () {
 		prevArrow: '<div class="arrow-wrapper arrow-wrapper--left"><i class="icon-arrow-left"></i></div>'
 	});
 	
+	$('.pratham-banner__slider').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		autoplay: true,
+		speed: 600,
+		slidesToShow: 1,
+		asNavFor: '.pratham-banner__slider2'
+	});
+	
+	$('.pratham-collections__slider').slick({
+		dots: true,
+		arrows: true,
+		infinite: true,
+		// autoplay: true,
+		speed: 600,
+		slidesToShow: 1,
+		mobileFirst: true,
+		responsive: [
+			{
+				breakpoint: 1200,
+				settings: {
+					slidesToShow: 4,
+					infinite: true
+				}
+			},
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 3,
+					infinite: true
+				}
+			},
+			{
+				breakpoint: 768,
+				settings: {
+					slidesToShow: 2,
+					infinite: true
+				}
+			},
+			{
+				breakpoint: 600,
+				settings: {
+					slidesToShow: 2,
+					variableWidth: false
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		],
+		nextArrow: '<div class="arrow-wrapper arrow-wrapper--right"><i class="icon-arrow-right"></i></div>',
+		prevArrow: '<div class="arrow-wrapper arrow-wrapper--left"><i class="icon-arrow-left"></i></div>'
+	});
+	
+	$('.pratham-banner__slider2').slick({
+		dots: false,
+		arrows: true,
+		infinite: true,
+		autoplay: true,
+		speed: 600,
+		slidesToShow: 1,
+		centreMode: true,
+		centerPadding: '6opx',
+		slidesToScroll: 1,
+		asNavFor: '.pratham-banner__slider',
+		mobileFirst: true,
+		nextArrow: '<div class="arrow-wrapper arrow-wrapper--right"><i class="icon-arrow-right"></i></div>',
+		prevArrow: '<div class="arrow-wrapper arrow-wrapper--left"><i class="icon-arrow-left"></i></div>',
+		responsive: [
+			{
+				breakpoint: 992,
+				settings: {
+					slidesToShow: 1,
+					variableWidth: true
+				}
+			},
+			{
+				breakpoint: 767,
+				settings: {
+					slidesToShow: 2
+				}
+			},
+			{
+				breakpoint: 480,
+				settings: {
+					slidesToShow: 1
+				}
+			}
+		]
+	});
+	
 	//Bhupi Carousel
 	$('.shivam-banner__slider').slick({
 		dots: false,
