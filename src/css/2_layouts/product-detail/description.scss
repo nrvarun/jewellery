@@ -2,6 +2,7 @@
     padding: 20px;
     background-color: #f7f7f7;
 
+
     &__img-wrapper {
         background-color: $white;
     }
@@ -15,7 +16,10 @@
     }
 
     &__content {
+        
         padding: 20px;
+        // background-color: #f5f4f4;
+        
         &__name {
             font-family: $raleway;
             font-size: 24px;

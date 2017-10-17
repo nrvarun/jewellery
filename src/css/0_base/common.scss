@@ -22,6 +22,14 @@ main {
     margin-bottom: 60px;
   }
 }
+.padding0{
+  &--left {
+    padding-left: 0;
+  }
+  &--right {
+    padding-right: 0;
+  }
+}
 .overflow-hidden {
   overflow: hidden;
   padding: 0 !important;
