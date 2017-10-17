@@ -184,7 +184,7 @@ $(document).ready(function () {
 	});
 
 	$('.product-related__slider').slick({
-		dots: true,
+		dots: false,
 		arrows: true,
 		infinite: true,
 		// autoplay: true,

@@ -12,19 +12,20 @@
     &__card {
         
         &,
-        &:hover,
         &:focus,
         &:active {
+            display:block;
             text-decoration: none;
+            outline: none;
+            background-color: $white;
+            border: 1px solid #f4f1f1;
+            margin-bottom: 30px;    
+            transition: box-shadow 0.5s ease;
+            white-space: nowrap;
         }
 
-        background-color: $white;
-        border: 1px solid #f4f1f1;
-        margin-bottom: 30px;
-
-        transition: box-shadow 0.5s ease;
-
         &:hover {
+            text-decoration: none;
             box-shadow: 0px 1px 13px rgba(0,0,0,0.2);
         }
 
@@ -67,9 +68,11 @@
             &:focus,
             &:active {
                 text-decoration: none;
+                outline: none;
             }
             margin: 0;
-            font-family: $raleway;
+            font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            font-weight: 400;
             font-size: 14px;
             color: #ec9600;
             @media (min-width: $screen-md) {

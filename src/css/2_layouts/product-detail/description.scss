@@ -1,8 +1,90 @@
 .product-details {
-    
+    padding: 20px;
+    background-color: #f7f7f7;
+
+    &__img-wrapper {
+        background-color: $white;
+    }
+
     &__img {
         height: 100%;
-        width: 100%
+        width: 100%;
+        max-width: 450px;
+        display: block;
+        margin: 0 auto;
+    }
+
+    &__content {
+        padding: 20px;
+        &__name {
+            font-family: $raleway;
+            font-size: 24px;
+        }
+       
+        &__model {
+            font-family: $raleway;
+            font-size: 15px;
+            color: #666666;
+            font-weight: 300;
+            span {
+                text-transform: uppercase;
+                font-weight: 700;
+                font-size: 18px;
+            }
+        }
+       
+        &__desc {
+            font-family: $raleway;
+            font-size: 18px;
+            color: #666666;
+            font-weight: 300;
+            margin-bottom: 20px;
+        }
+        
+        &__price {
+            font-family: 'Helvetica Neue', Arial, Helvetica, sans-serif;
+            font-size: 18px;
+            font-weight: 700;
+            color: #ec9600;
+            span {
+                font-family: $raleway;
+                font-size: 15px;
+                font-weight: 400;
+                color: #333333;
+            }
+            @media (min-width: $screen-lg) {
+                font-size: 30px;
+            }
+        }
+
+    }
+
+    &__data-container {
+        margin: 30px 0 20px 0;
+    }
+
+    &__data-wrapper {
+        display: flex;
+    }
+
+    &__data-seperator {
+        margin: 0 30px 0 20px;
+    }
+
+    &__data-text {
+        font-family: $raleway;
+        font-size: 14px;
+        font-weight: 300;
+        min-width: 70px;
+        text-transform: capitalize;
+    }
+
+    &__data-desc {
+        font-family: $raleway;
+        font-size: 14px;
+        font-weight: 500;
+        color: #999999;
+        text-transform: uppercase;
     }
     
 }
