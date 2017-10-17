@@ -36,3 +36,12 @@
 @import "pratham/limited-collection";
 @import "pratham/products";
 @import "pratham/collections";
+
+//Products
+@import "products/banner";
+@import "products/breadcrumbs";
+@import "products/gallery";
+
+//Product detail
+@import "product-detail/description";
+@import "product-detail/related-products";

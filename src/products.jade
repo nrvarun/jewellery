@@ -1,0 +1,21 @@
+doctype html
+html
+	- var page_name= "products"
+	head
+
+		include jade/base/head.jade
+		+head(page_name)
+
+	body
+		include ./jade/base/header.jade
+		
+		main
+			include ./jade/layouts/products/banner.jade
+			include ./jade/layouts/products/breadcrumbs.jade
+			include ./jade/layouts/products/gallery.jade
+
+		include ./jade/base/footer.jade
+		
+		include ./jade/components/sidebar.jade
+
+		include ./jade/base/scripts.jade

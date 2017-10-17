@@ -1,0 +1,23 @@
+.products-breadcrumbs {
+    background-color: #e5eaee;
+    margin: 0;
+    border-radius: 0px;
+    
+    @media (min-width: $screen-md) {
+        padding: 10px;
+    }
+
+    li {
+
+        text-transform: capitalize;
+        color: #666666;
+        font-size: 15px;
+        &.active {
+            color: #512d1c;
+        }
+    }
+
+    a {
+        color: #999999;
+    }
+}

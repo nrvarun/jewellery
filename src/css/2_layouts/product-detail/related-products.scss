@@ -1,0 +1,25 @@
+.product-related {
+
+    padding: 20px;
+
+    &__heading {
+        font-family: $playfair-dc;
+        font-size: 30px;
+    }    
+
+    &__slider {
+        padding: 0;
+        list-style-type: none;
+        margin: 30px;
+    }
+
+    &__slide {
+        margin: 10px;
+    }
+
+    .products-gallery__card {
+        margin: 0;
+        border: 0;
+    }
+
+}
