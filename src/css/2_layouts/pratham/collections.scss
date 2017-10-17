@@ -1,0 +1,151 @@
+.pratham-collections {
+    padding: 50px;
+    margin-bottom: 50px;
+
+    min-height: 400px;
+    background: url('../img/pratham/collection-bgimg.png') no-repeat;
+    background-size: 300px;
+    background-position: top left;
+
+    &__heading {
+        font-family: "Playfair Display SC",serif;
+        font-size: 40px;
+        letter-spacing: 0.5px;
+        margin-bottom: 40px;
+        margin-top: 0;
+        color: #c8c8bd;
+
+        @media (min-width: $screen-md) {
+            font-size: 55px;
+        }
+
+    }
+
+
+    &__slider {
+        list-style-type: none;
+        padding: 0;
+
+        .slick-dots {
+            
+                bottom: -70px;
+                left: 10px;
+            
+                li button:before {
+                    height: 12px;
+                    width: 12px;
+                    color: transparent;
+                    border: 1px solid #3c6723;
+                    border-radius: 30px;
+                    font-size: 8px;
+                    line-height: 12px;
+                }
+    
+                li.slick-active button:before {
+                    color: #3c6723;
+                    height: 15px;
+                    width: 15px;
+                    font-size: 9px;
+                    line-height: 15px;
+                    top: -2px;
+                }
+    
+            }
+
+        .arrow-wrapper {
+            
+            cursor: pointer;
+
+            font-size: 14px;
+
+            &--left {
+                position: absolute;
+                left: -25px;
+                top: 50%;
+            }
+            &--right {
+                position: absolute;
+                right: -25px;
+                top: 50%;
+            }
+        }
+
+    }
+
+    &__slide {
+
+        &.slick-slide {
+            transition: opacity 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            opacity: 0.5;
+        }
+
+        &.slick-current.slick-active {
+            opacity: 1;
+            .pratham-collections__slide__content__data  {
+                opacity: 1;
+            }
+        }
+
+
+        &__content {
+            position: relative;
+
+            &__img {
+                width: 100px;
+                margin: 0 auto;
+
+                @media (min-width: 500px) {
+                    width: 200px;
+                }
+
+            }
+
+            &__title,
+            &__sub-title {
+                font-family: $playfair-dc;
+                color: $white;
+                text-align: center;
+            }
+
+            &__title {
+                margin: 0;
+                border-top: 1px solid rgba(236, 236, 236, 0.47);
+                padding-top: 5px;
+                font-size: 20px;
+            }
+            
+            &__sub-title {
+                font-size: 14px;
+                border-bottom: 1px solid rgba(236, 236, 236, 0.47);
+                padding-bottom: 5px;
+            }
+               
+            &__data {
+                position: absolute;
+                top: 0;
+                right: 0;
+                left: 0;
+                bottom: 0;
+                height: 100%;
+                width: 100px;
+                margin: 0 auto;
+                opacity: 0;
+                padding: 20px;
+                background-color: rgba(60, 103, 35, 0.8);
+                transition: opacity 0.5s cubic-bezier(0.165, 0.84, 0.44, 1);
+
+                @media (min-width: 500px) {
+                    width: 200px;
+                }
+
+            }
+
+            &:hover {
+                
+            }
+
+           
+        }
+    }
+
+}

@@ -1,0 +1,23 @@
+doctype html
+html
+	- var page_name= "pratham"
+	head
+
+		include jade/base/head.jade
+		+head(page_name)
+
+	body
+		include ./jade/base/header.jade
+		
+		main
+			include ./jade/layouts/pratham/banner.jade
+			include ./jade/layouts/pratham/limited-collection.jade
+			include ./jade/layouts/pratham/products.jade
+			include ./jade/layouts/pratham/collections.jade
+            
+
+		include ./jade/base/footer.jade
+		
+		include ./jade/components/sidebar.jade
+
+		include ./jade/base/scripts.jade
