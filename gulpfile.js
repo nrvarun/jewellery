@@ -30,12 +30,14 @@ gulp.task('serve', function () {
         styles: ['opacity: 0', 'position: absolute']
       }
     });
+    
     /**
      * Watch for scss changes, tell BrowserSync to refresh main.css
      */
     gulp.watch(["src/css/**/*.scss"], function () {
       reload("src/css/main.css", {stream: true});
     });
+
     /**
      * Watch for Jade file changes, reload the whole page
      */
